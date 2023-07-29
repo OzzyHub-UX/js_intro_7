@@ -1,0 +1,73 @@
+
+07-29-2023 JS Data Types & Operators 
+
+RECAP:
+Output statement: console.log()
+
+let age = 45;
+
+console.log("Age is " + age); // "Age is 45"
+
+Concatination => putting together stings or strings with variables 
++ is used for Concatination and addition (Math Operator)
+
+number + number   -> Math - addition
+string + string   -> Concatination
+number + string   -> Concatination
+string + string   -> Concatination
+
+
+VARIABLES
+var: was used before ES6 (2015)
+const: immutable - cannot be changed - final 
+let: mutable - can be changed - not final
+
+
+IT: Information Technology
+information: Data
+
+DATA TYPES:
+string: email, name, lname, address, ssn...
+    we store strings in double quotes, single quotes
+
+numbers: age, prices, quantity...
+    whole numbers: 10, 5
+    floating numbers: 10.5, 1.235
+
+boolean: true or false
+
+Reference types: complex advanced data 
+
+
+
+The difference between =, ==, ===
+= assignment operator 
+== comparison 
+=== strict comparison
+
+
+undefined vs null
+undefined: it is a variable declared but not assigned with any value
+let age;
+
+null: it is variable assigned with null (explicitly). It states you have no information about the value.
+let age = null; 
+
+
+
+JS Operators
+= assignment operator
+
+Arithmetic Operators
++ sum or addition
+* multiplication-product 
+- subtraction
+/ divison
+% modulus / remainder 
+** exponentiation 
+++ increment
+-- decrement
+
+Comparison Operators
+== equals
+=== strict

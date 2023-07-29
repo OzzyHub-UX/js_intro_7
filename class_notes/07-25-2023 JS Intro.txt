@@ -1,0 +1,62 @@
+
+
+Computer:
+A computer is an electronic machine that is used to input, process, and then output data, typically in binary form,
+ according to instructions given to it in a variable program.
+
+Computer is consist of Software and hardware.
+    Software: Operating Systems, Microsoft Office Suite, Paint
+    Hardware: Mouse, screen, printer, hard-disk, CPU 
+
+
+    |||||||||||||||||||||| -> oldest way of number Systems
+    0 1 2 3 4 5 6 7 8 9 10 - base-10 number systems 
+ Binary Code: ones and zeros 
+ 1=one
+ 0=OFF
+ -It is the machine language what computer underatands
+ -All letters, digits, shaoes and more are converted to binary code to be understood and processed by computer.
+
+-machine 7
+-input
+-output
+-code
+-data
+-binary code
+
+Binary Units:
+Bit: one or zero
+byte: 8 bits
+kilobyteL 1024 bytes
+
+
+
+
+Programming language:
+-You can create apps
+-communication with the machine
+-has rules (SYNTAX)
+-Examples: JavaScript, Java, Go, Python, JavaScript 
+
+interpreted languages: JavaScript
+compiled languages: lack ambiguity - cofusion - conflict
+
+
+compilation - compile - compiler
+execution - execute - executor         -> running the code
+
+
+/*
+Multi-line comments 
+*/
+
+// Single line comment
+
+console.log(); // this is a coding statement
+
+NOTE: It is recommended to put ; after every coding statement (JS)
+
+console.log(); 
+
+MAC: cmd -> command 
+WindowsL CTRL -> control

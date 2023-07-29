@@ -1,0 +1,44 @@
+
+Source code: It is code that is written with any program language
+    console.log("Hello World") // coding statement
+
+Hwo to duplicate line code
+Windows: ALT + SHIFT + down arrow
+MAC OPTION + SHIFT + down arrow 
+
+We can put our text in 
+"" double quotes 
+'' single quotes
+`` backticks 
+
+
+VARIABLES - Declaration vs assignment vs intialization
+let name; // Declaration reserve memory for the name 
+= assignment operator
+
+
+
+
+____ data = "value";
+
+const pi = 3.14;
+
+const firstMonthOfTheYear = "JANUARY";
+
+
++ operator
+when used between strings = concatination
+EX: "hello" + "abc"  -> helloabc
+    "123" + "12"     -> 12312
+
+when used between numbers = addition
+Example: 12 + 3   -> 15 
+         0 + 0.5  -> 0.5
+
+When used between string and number = concatination
+Example: "John" + 45   -> John45
+
+When used between number and string = concatination
+Example: 4 + "abc"   = 4abc
+
+
