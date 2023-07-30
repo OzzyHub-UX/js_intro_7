@@ -1,1 +1,39 @@
 
+
+NaN = Not a number 
+
+
+When to create a variable to store data?
+-When you will use it more than one time!!!
+
+
+Assignment Operator - Shorthand
+=  assignment operator 
++= 
+-=
+*=
+**=
+/=
+%=
+
+
+let number = 10;
+
+// number = number * 5
+number *= 5;
+
+console.log(number); // 50
+
+number *= 5;
+
+EXPONENTIATION
+5 ** 2  => 5 * 5 = 25
+5 ** 3  => 5 * 5 * 5 = 125
+
+
+INCREMENT & DECREMENT OPERATORS 
+-These are used to increase or decrease a variable value by 1
+
+post-increment vs pre-increment 
+post-decrement vs pre-decrement 
+
