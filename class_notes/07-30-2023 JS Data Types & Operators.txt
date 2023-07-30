@@ -37,3 +37,26 @@ INCREMENT & DECREMENT OPERATORS
 post-increment vs pre-increment 
 post-decrement vs pre-decrement 
 
+
+variable++; // variable value does not change in this line but it will be increased by1 next time
+variable--; // variable value does not change in this line but it will be decreased by1 next time
+++variable; // variable value increased by 1 and it is new value to be used after that
+--variable; // variable value decreased by 1 and it is new value to be used after that
+
+
+
+COMPARISON OPERATORS 
+==    compare ONLY values and return true if they are equal
+===   compare both values and data types and return true if both values and data types are equal 
+
+"3" == 3    -> true
+"2" === 2   -> false 
+"3" === "3" -> true
+
+
+3 + "5" -> 35
+
+true  -> 1
+false -> 0
+null  -> 0
+""    -> 0

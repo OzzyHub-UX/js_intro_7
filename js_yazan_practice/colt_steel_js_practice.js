@@ -43,3 +43,17 @@ console.log(27 % 2);
 // Exponents
 console.log(2 ** 4);
 
+
+//---------------------------------------------------------------------------------------------------//
+
+
+/*
+Varibales are like "labeled jars".
+We can store a value and give it a name so that we can 
+- recall it 
+- use it 
+- or change it later on
+*/
+
+// let keyword -- lets you change the value
+// const keyword == works just like let, except you cannot change the value
