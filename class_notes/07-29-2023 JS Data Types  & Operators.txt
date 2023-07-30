@@ -71,3 +71,34 @@ Arithmetic Operators
 Comparison Operators
 == equals
 === strict
+!= Not equals 
+!== strict not equals 
+> greater than
+< less than
+>= greater than or equals
+<= less than or equals
+
+Logical Operators
+&& and 
+|| or
+! not
+
+
+15 % 4 = 3
+27 % 8 = 3
+21 % 21 = 0
+75 % 25 = 0
+3 % 5 = 3
+
+
+1. if the number on the left is less than the number on the right   => the result is the left number itself
+2. if the left number is greater than the right number              => you find the remainder
+3. if the left number is divisible by the right number              => the result is ZERO
+
+
+PRIORITY
+1. parantheses
+2. exponentiation
+3. multiplication, division
+4. addition, subtraction
+
