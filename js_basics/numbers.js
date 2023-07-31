@@ -34,10 +34,14 @@ console.log(typeof -Infinity); // number
 
 // isNaN() function
 console.log(isNaN(5)); // false
-console.log(iSNaN(10.5)); // false
 console.log(isNaN("Hello")); // true
 
-console.log(isNaN(true + 5));
+console.log(isNaN(true)); // false 
+console.log(isNaN(true + 5)); // false
+
+
+
+
 
 
 
