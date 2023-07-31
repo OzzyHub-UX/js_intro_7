@@ -46,14 +46,44 @@ console.log(2 ** 4);
 
 //---------------------------------------------------------------------------------------------------//
 
+// Strings and Indexing 
 
-/*
-Varibales are like "labeled jars".
-We can store a value and give it a name so that we can 
-- recall it 
-- use it 
-- or change it later on
-*/
+let color = "purple";
 
-// let keyword -- lets you change the value
-// const keyword == works just like let, except you cannot change the value
+console.log(color[0]);
+console.log(color[4]);
+console.log(color[3]);
+console.log(color[6]);
+
+// String Methods
+
+// UpperCase and LowerCase  -- converts a string to either Upper Case or Lowercase
+let msg = "I am a student at life."; 
+
+let yell = msg.toUpperCase();
+let whisper = msg.toLowerCase();
+
+console.log(msg.toUpperCase());
+
+console.log(yell);
+console.log(whisper);
+
+// trim -- deletes white space before/after message NOT in between words.
+
+let message = "     hi my name is      ";
+
+console.log(message.trim());
+
+// indexOf 
+
+let favTVShow = "Amazing World Of Gumball"
+
+console.log(favTVShow.indexOf("Amazing"));
+
+// slice
+
+let str = "supercalifragilisticexpialidocious";
+
+console.log(str.slice(0,5));
+
+

@@ -50,6 +50,7 @@ function customRound(number) {
     return Math.round(number * 100) / 100;
 }
 
+
 console.log("Monthly income = $" + customRound(annualSalary / monthsInYear));
 console.log("Bi-weekly income = $" + customRound((annualSalary / weeksInYear) * 2));
 console.log("Weekly income = $" + customRound(annualSalary / weeksInYear));

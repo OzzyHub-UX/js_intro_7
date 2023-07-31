@@ -1,0 +1,11 @@
+
+07-31-2023 JS Numbers & Math Object 
+
+-Other languages (compiled): byte, short, long, int, float, double, BigInteger
+JS: Numbers
+
+
+
+"2" * 5     => 10  // JS Allows this while other languages this would be an error
+"10" / "2"  => 5
+"abc" * "hello"   => NaN -> Not a Number
