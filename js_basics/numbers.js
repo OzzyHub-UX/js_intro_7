@@ -32,12 +32,34 @@ console.log(-Infinity); // - Infinity
 console.log(typeof Infinity); // number
 console.log(typeof -Infinity); // number
 
+console.log(Infinity + Infinity); // Infinity
+console.log(Infinity - Infinity); // NaN 
+
 // isNaN() function
 console.log(isNaN(5)); // false
 console.log(isNaN("Hello")); // true
 
 console.log(isNaN(true)); // false 
 console.log(isNaN(true + 5)); // false
+
+
+let number = new Number(20);
+console.log(typeof number);
+
+
+// BigInt
+let i1 = 1234567890
+let i2 = 12345678901234567890n;
+let i3 = BigInt(12345678901234567890n);
+let i4 = 4;
+
+console.log(i1);
+console.log(i2);
+console.log(i3);
+
+console.log(i2 + BigInt(i4));
+
+
 
 
 

@@ -9,3 +9,15 @@ JS: Numbers
 "2" * 5     => 10  // JS Allows this while other languages this would be an error
 "10" / "2"  => 5
 "abc" * "hello"   => NaN -> Not a Number
+
+
+Numeber Functions 
+toPercision(2)  -> you want to see 2 digits regardless of decimal part
+toFixed(2)      -> you want to see 2 digits for the decimal part
+
+isInteger() vs isSafeInteger()
+
+Example                Integer          Safe Integer
+
+25                     
+5849302453675834546    true
