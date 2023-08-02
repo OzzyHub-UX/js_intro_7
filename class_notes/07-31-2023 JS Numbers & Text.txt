@@ -17,7 +17,18 @@ toFixed(2)      -> you want to see 2 digits for the decimal part
 
 isInteger() vs isSafeInteger()
 
-Example                Integer          Safe Integer
+Example                             Integer             Safe Integer
+25                                  true                true                
+5873465834765837465837465837465     true                false
 
-25                     
-5849302453675834546    true
+
+
+Multiply all of them with 10
+1.8441017365386836
+4.121499796883552
+9.809897828766787
+9.802414664625301
+3.1365124210479567
+
+0 and 1         0       0.99
+1 and 10        1       10

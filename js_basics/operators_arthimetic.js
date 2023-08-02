@@ -22,11 +22,15 @@ console.log(num2 % num1); // 5
 console.log(num3 % num4); // 1
 console.log((num5 + num1) % num3); // 6
 
+Math.random() * 10;
 
 console.log(3 * 5 + 2); // 17
 console.log(5 - 3 + 10 / 2 + 13); // 20
 console.log((5 - 2) * 5 ** 2); // 75
 console.log(2 ** 3 * 8 / 16 * 2); // 8
+
+console.log();
+
 
 
 
