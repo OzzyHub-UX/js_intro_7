@@ -1,0 +1,60 @@
+
+
+08-02-2023 JS Strings
+
+-It is a sequence of characters stored in double or single quotes
+
+let str = '';
+let str2 = "";
+
+EXAMPLES/ "TechGlobal", "Hello", "abc", '123'
+
+I 
+can
+do 
+It
+
+
+{} -> curly braces
+() -> parantheses
+[] -> square brackets
+
+; -> semi-colon
+: -> colon
+, -> coma
+. -> dot-period
+` -> 
+
+
+Primitive vs Object
+Primitives: basic data type - allocates less memory - fast to use
+NOTE: Primitives have a limited capacity to store data and that is why we use objects.
+
+Objects: complex data types - allocates more memory - slower
+
+
+
+Property vs Function
+-functions takes ()
+-Property 
+
+function = method = behavior
+
+
+Mutable: can be changed
+Immutable: cannot be changed
+Strings are Immutable data types.
+
+toLowerCase()
+
+toUpperCase(); 
+
+
+Property access with []
+TASK: returns the characters at the given index
+RETURN: one charavter at the gien index 
+DATA TYPE: Strings
+
+NOTE: When you have a string with multple  characters:
+The first charcater will always have index of 0
+The last character will always have index length - 1
