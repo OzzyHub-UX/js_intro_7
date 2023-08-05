@@ -1,0 +1,61 @@
+
+08-05-2023 JS Strings
+
+RECAP: 
+
+String functions: manipulates (updates, modify, change, or more actions) the data stored in a string variable.
+
+let word = "enjoy"; // JOY
+
+length property: it gives us back how many characters you have in a string
+word.length; // 5
+
+Changing cases:
+toLowerCase()
+toUpperCase()
+
+word.toUpperCase(); // ENJOY
+
+TASK:
+RETURN:
+DATA TYPE:
+
+Extracting charcaters:
+Accessing with property [];
+
+let city = "Miami";
+city[1]; // 1
+city[7] // undefined 
+
+
+-charAt()
+city.charAt(1); // i 
+city.charAt(7); // empty string
+
+
+-charCodeAt()
+city.charCodeAt(2); // 97 
+
+
+HOW TO GET FIRST AND LAST CHARCTERS FROM A STRING?
+let word1 = "JavaScript", word2 = "Ruby";
+
+word1[0]; // "J"
+word2[0]; // "R"
+
+word1[length - 1]; // "t"
+word2[length - 1]; // "y"
+
+let greeting = "Hello";
+greeting[0]; // "H"
+greeting[length - 1]; "o"
+
+
+Searching in string
+-search() searches a string in another and returns the position of first occurence.
+
+
+-includes() checks if one string contains another string
+"Hello World".includes("Hello"); // true
+"Hello World".includes(" "); // true
+"Hello World".includes("l"); // true

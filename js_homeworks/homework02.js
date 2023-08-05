@@ -3,7 +3,7 @@ console.log("------------Task-1------------");
 
 let str1 = "5", str2 = "2";
 
-console.log(`The sum of ${str1} and ${str2} = ${parseInt(str1) + parseInt(str2)}`);
+console.log(`The sum of ${str1} and ${str2} = ${Number(str1) + Number(str2)}`);
 console.log(`The product of ${str1} and ${str2} = ${str1 * str2}`);
 console.log(`The division of ${str1} and ${str2} = ${str1 / str2}`);
 console.log(`The subtraction of ${str1} and ${str2} = ${str1 - str2}`);
@@ -14,6 +14,11 @@ console.log(`The exponentitation of ${str1} and ${str2} = ${str1 ** str2}`);
 
 console.log("------------Task-2------------");
 
+let s1 = "200", s2 = "-50";
+
+console.log(`The greatest value is = ${Math.max(Number(s1 , s2))}`);
+console.log(`The smallest value is = ${Math.min(Number(s1 , s2))}`);
+console.log(`The average is = ${(Number(s1) + Number(s2)) / 2}`);
 // Task-3
 
 console.log("------------Task-3------------");
