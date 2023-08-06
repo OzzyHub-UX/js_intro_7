@@ -19,10 +19,13 @@ let s1 = "200", s2 = "-50";
 console.log(`The greatest value is = ${Math.max(Number(s1 , s2))}`);
 console.log(`The smallest value is = ${Math.min(Number(s1 , s2))}`);
 console.log(`The average is = ${(Number(s1) + Number(s2)) / 2}`);
+console.log(`The absolute difference is = ${Math.abs(Number(s1) - (Number)(s2))}`);
+
 // Task-3
 
 console.log("------------Task-3------------");
 
+console.log(Math.floor(Math.random( * 10));
 // Task-4
 
 console.log("------------Task-4------------");

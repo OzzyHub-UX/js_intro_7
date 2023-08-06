@@ -59,3 +59,9 @@ Searching in string
 "Hello World".includes("Hello"); // true
 "Hello World".includes(" "); // true
 "Hello World".includes("l"); // true
+
+indexOf() vs lastIndexOf()
+indexOf()
+TASK: Returns the position of the first occurence of a substring.
+RETURN: returns the position
+DATA TYPE: number
