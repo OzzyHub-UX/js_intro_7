@@ -25,19 +25,20 @@ console.log(`The absolute difference is = ${Math.abs(Number(s1) - (Number)(s2))}
 
 console.log("------------Task-3------------");
 
-console.log(Math.floor(Math.random( * 10));
+console.log(Math.floor(Math.random() * 51) + 1);
+
 // Task-4
 
-console.log("------------Task-4------------");
+console.log("\n------------Task-4------------\n");
 
 // Task-5
 
-console.log("------------Task-5------------");
+console.log("\n------------Task-5------------\n");
 
 // Task-6
 
-console.log("------------Task-6------------");
+console.log("\n------------Task-6------------\n");
 
 // Task-7
 
-console.log("------------Task-7------------");
+console.log("\n------------Task-7------------\n");
