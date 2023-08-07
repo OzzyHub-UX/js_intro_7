@@ -94,7 +94,7 @@ Expected Result 3:
 "Sc"
 */
 
-let s3 = "JavaScript";
+let s3 = "abcd";
 const middleIndex = s3.length / 2;
 
 console.log(s3.slice(middleIndex - 1, middleIndex + 1));
@@ -102,5 +102,97 @@ console.log(s3.slice(middleIndex - 1, middleIndex + 1));
 
 // Task-5
 console.log("\n---------Task-5---------\n");
+
+/*
+Requirement:
+Write a program that divides the given String. Assume the length of the String will at least
+be 4.
+-Find and print the first two characters
+-Find and print the last two characters
+-Find and print all the middle characters other than first and last 2 characters
+Test Data 1:
+let s4 = "abcd";
+Expected Result 1:
+The first 2 characters are = ab
+The last 2 characters are = cd
+The other characters are =
+Test Data 2:
+let s4 = "JavaScript";
+Expected Result 2:
+The first 2 characters are = Ja
+The last 2 characters are = pt
+The other characters  are = vaScri
+*/
+
+let s4 = "JavaScript";
+
+console.log(`The first 2 charcters are = ${s4.slice(0,2)}`);
+console.log(`The last 2 characters are = ${s4.slice(s4.length - 2)}`);
+console.log(s4.slice(2,s4.length - 2));
+
+
+// Task-6
+console.log("\n---------Task-6---------\n");
+
+/*
+
+*/
+
+let s5 = "Java";
+
+console.log(s5.slice(0,2).includes(s5.slice(s5.length - 2))); 
+
+
+// Task-7
+console.log("\n---------Task-7---------\n");
+
+let s61 = "123456";
+let s62 = "Blue";
+
+console.log(s61.slice(1, s61.length - 1) + s62.slice(1, s62.length - 1));
+
+
+// Task-8
+console.log("\n---------Task-8---------\n");
+
+let s7 = "xbluexx";
+
+console.log(s7.slice(0,2).startsWith("xx") && s7.slice(s7.length - 2).endsWith("xx"));
+
+console.log(s7.slice(0,2).includes("xx") && s7.slice(s7.length - 2).includes("xx"));
+
+
+// Task-9
+console.log("\n---------Task-9---------\n");
+
+let s8 = "JavaScript is nice to learn";
+
+let firstWord = s8.slice(0, s8.indexOf(" "));
+let lastWord = s8.slice(s8.lastIndexOf(" ") + 1);
+let middle = s8.slice(s8.indexOf(" "), s8.lastIndexOf(" "));
+
+console.log(lastWord + middle + firstWord);
+let words = s8.split(" ");
+
+[words[0] , words[words.length - 1]] = [words[words.length-1], words[0]];
+
+console.log(words);
+
+
+// Task-10
+console.log("\n---------Task-10---------\n");
+
+let counter = 0;
+
+let s10 = "I like apple";
+
+/*
+PSEUDO CODE:
+
+1. 
+*/
+
+console.log(s10.split(" "));
+console.log(s10.split(" ").length);
 
 
