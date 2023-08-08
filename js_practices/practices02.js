@@ -194,5 +194,5 @@ PSEUDO CODE:
 
 console.log(s10.split(" "));
 console.log(s10.split(" ").length);
-
+console.log(s10.length - s10.replaceAll(" ", "").length + 1);
 
