@@ -52,3 +52,27 @@ on or with that particular string.
 replacing parts of a string, changing case
 
 -> Some methods accept arguments that modify their behavior. EX-> slice();
+
+
+//---------------------------------------------------------------------------------------------------//
+
+=> String Template Literals
+
+Template literals are strings that allow embedded expressions, which will be evaluated and then turned into a resulting string. 
+
+-TO initiate String Template Literals and to achieve String Interpolation 
+we used the backtick keys and as well ${}.
+
+
+//---------------------------------------------------------------------------------------------------//
+
+=> Null & Undefined 
+
+        -Null
+    -> "Intentional absence of any value // Basically saying it must be assigned 
+
+        -Undefined
+    -> "Variables that do not have an assigned value are undefined 
+
+    
+

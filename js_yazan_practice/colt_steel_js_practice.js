@@ -88,3 +88,23 @@ console.log(str.slice(0,5)); // super
 console.log(str.slice(5)); // califragilisticexpialidocious
 
 
+//---------------------------------------------------------------------------------------------------//
+
+// String Template Literals 
+
+// USE Backtick keys
+
+let num1 = 3;
+let num2 = 4;
+
+console.log(`I counted ${(Number)(num1) + (Number)(num2)} sheep`);
+
+
+//---------------------------------------------------------------------------------------------------//
+
+// Null and Undefined 
+
+let loggedInUser = null; // value is explicitly nothing 
+
+loggedInUser = "Alan Rickman";
+
