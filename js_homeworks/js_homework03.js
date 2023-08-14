@@ -28,18 +28,46 @@ else if (randomNum4 === randomNum5 || randomNum4 === randomNum6 || randomNum5 ==
 else console.log("NO MATCH");
 
 
-
+// Task-3
 console.log("\n------------Task03------------\n");
+
+function hasA(str) {
+    return str.toLowerCase().startsWith("a")
+}
+
+console.log(hasA("Apple"));
+
+
+// Task-4
 console.log("\n------------Task04------------\n");
+
+function doubleOrTripleWord(str) {
+    if (str.length % 2 === 0) return str + str + str;
+    else return str + str;
+}
+
+console.log(doubleOrTripleWord("22"));
+
+
+// Task-5
 console.log("\n------------Task05------------\n");
+
+/*function firstWord(str){
+    return str.slice(0,str.indexOf(" "));
+}
+*/
+
+function firstWord(words) {
+    let firstWord = words.split();
+    if (words.length > 0) return firstWord[0];
+    else return words;
+}
+
+console.log(firstWord("Hello"));
+
 console.log("\n------------Task06------------\n");
 console.log("\n------------Task07------------\n");
 console.log("\n------------Task08------------\n");
 console.log("\n------------Task09------------\n");
 console.log("\n------------Task10------------\n");
 console.log("\n------------Task11------------\n");
-
-let result = 5 === 2 + "3" ? "FOO" : "BAR";
-console.log(result);
-
-console.log(Math.pow(2,3) /4);
