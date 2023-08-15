@@ -135,5 +135,5 @@ function swapFirstLastWord(str) {
     else return "";
 }
 
-console.log(swapFirstLastWord("Hello World"));
+console.log(swapFirstLastWord("Hello "));
 
