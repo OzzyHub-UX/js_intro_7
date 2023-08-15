@@ -65,9 +65,73 @@ function firstWord(words) {
 
 console.log(firstWord("Hello"));
 
+
+// Task-6
 console.log("\n------------Task06------------\n");
+
+function lastWord(str) {
+    return str.slice(str.lastIndexOf(" ") + 1);
+}
+
+console.log(lastWord("I like JavaScript"));
+
+
+// Task-7
 console.log("\n------------Task07------------\n");
+
+function firstLastWord(str) {
+    
+    let firstWord = str.slice(0, str.indexOf(" "));
+    let lastWord = str.slice(str.lastIndexOf(" ") + 1);
+
+    if (str.includes(" ")) return firstWord + lastWord;
+    else return str + str;
+}
+
+console.log(firstLastWord("Hello"));
+
+
+// Task-8
 console.log("\n------------Task08------------\n");
+
+function startVowel(str) {
+    if (str.toLowerCase().startsWith("a") || 
+    str.toLowerCase().startsWith("e") || 
+    str.toLowerCase().startsWith("i") || 
+    str.toLowerCase().startsWith("o") || 
+    str.toLowerCase().startsWith("u")) return true;
+    else return false;
+}
+
+console.log(startVowel("Apple"));
+
+// Task-9
 console.log("\n------------Task09------------\n");
+
+function swap4(word) {
+
+    let firstHalf = word.slice(word.length - 4);
+    let middleHalf = word.slice(4, word.length - 4);
+    let lastHalf = word.slice(0,4);
+
+    if (word.length >= 8) return firstHalf + middleHalf + lastHalf;
+    else return "";
+}
+
+console.log(swap4("TechGlobal"));
+
+
+// Task-10
 console.log("\n------------Task10------------\n");
-console.log("\n------------Task11------------\n");
+
+function swapFirstLastWord(str) {
+
+    let firstWord = str.slice(0, str.indexOf(" "));
+    let middleHalf = str.slice(str.indexOf(" "), str.lastIndexOf(" ") + 1);
+    let lastWord = str.slice(str.lastIndexOf(" ") + 1);
+
+    return lastWord + middleHalf + firstWord;
+}
+
+console.log(swapFirstLastWord("foo bar foo bar"));
+

@@ -1,0 +1,10 @@
+
+
+08-14-2023 CLI
+CLI: Command Line Interface 
+MAC -> Terminal
+Windows -> Command Prompt, Powershell
+
+Computer = machine = workspace = PC = laptop = local
+
+directory = folder = location = repository 
