@@ -126,12 +126,14 @@ console.log("\n------------Task10------------\n");
 
 function swapFirstLastWord(str) {
 
+
     let firstWord = str.slice(0, str.indexOf(" "));
     let middleHalf = str.slice(str.indexOf(" "), str.lastIndexOf(" ") + 1);
     let lastWord = str.slice(str.lastIndexOf(" ") + 1);
 
-    return lastWord + middleHalf + firstWord;
+    if (str.trim().includes(" ")) return lastWord + middleHalf + firstWord;
+    else return "";
 }
 
-console.log(swapFirstLastWord("foo bar foo bar"));
+console.log(swapFirstLastWord("Hello World"));
 
