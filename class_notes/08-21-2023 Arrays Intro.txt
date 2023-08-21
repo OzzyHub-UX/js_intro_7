@@ -1,0 +1,15 @@
+
+
+08-21-2023 Arrays Information
+
+DATA TYPES:
+
+1. primitives: string, number, boolean, bigint, undefined, null, symbol
+2. reference types - objects 
+    Arrays, Maps, Date, Time, Math, Number, String, more.
+
+-multiple values - collections
+
+items 
+orders 
+cars
