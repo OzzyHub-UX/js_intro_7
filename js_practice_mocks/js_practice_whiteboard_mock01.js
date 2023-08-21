@@ -134,6 +134,16 @@ console.log(randomNum2);
 
 console.log(randomNum2 * 1.6);
 
+
+console.log("-------------------------------------------");
+
+// Area of a square 
+
+
+
+
+/*
+
 console.log("-------------------------------------------");
 
 // First two characters
@@ -167,9 +177,7 @@ function lastTwoCharacters(str) {
 
 console.log(lastTwoCharacters("Tech"));
 
-console.log("-------------------------------------------");
 
-/*
 console.log("-------------------------------------------");
 
 // First and Last characters 
