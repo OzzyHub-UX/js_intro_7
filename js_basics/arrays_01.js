@@ -20,4 +20,18 @@ console.log(cities); // [[ 'Chicago', 'Miami', 'Berlin']
 console.log(cities[2]);
 console.log(cities[2].toUpperCase()); // BERLIN
 
-const numbers = [5,3,2,10];
+const numbers = [5, 3, 2, 10];
+console.log(numbers[-5]); // undefined
+console.log(numbers[-1]); // undefined
+console.log(numbers[-100]); // undefined
+console.log(numbers[-4]); // undefined
+
+
+console.log(typeof numbers); // object
+console.log(typeof cities); // object
+
+numbers[4] = 25;
+console.log(numbers);
+
+numbers[-1] = 100;
+console.log(numbers);
