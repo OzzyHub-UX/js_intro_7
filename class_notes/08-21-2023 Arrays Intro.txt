@@ -13,3 +13,9 @@ DATA TYPES:
 items 
 orders 
 cars
+
+HOW T CREATE AN ARRAY?
+-You can create array using array literals. (square brakcets)
+
+variable = [element1, element2, element3];
+const cars = ["Mercedes", "Tesla", "BMW"];
