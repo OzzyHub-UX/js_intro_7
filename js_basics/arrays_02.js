@@ -1,36 +1,46 @@
 
 /*
+TASK
+Create an array named as names to store below data
+Yuliia
+Alex
+Bali
+Igor
+Ramez
+Aziz
 
+Retrieve and print Igor 
+Retrieve and print Aziz as AZIZ
 */
 
-const names = ["Yuliia","Alex","Bali", "Igor", "Rame", "Aziz"];
+const names = ["Yuliia", "Alex", "Bali", "Igor", "Ramez", "Aziz"];
+
+//names = 25; // TypeError
+
+console.log(names); // [ 'Yuliia', 'Alex', 'Bali', 'Igor', 'Ramez', 'Aziz' ]
 
 console.log(names[3]);
 console.log(names[names.length - 1].toUpperCase());
 
 
-let randomNumber1 = Math.floor(Math.random() * 10) + 1;
-let randomNumber2 = Math.floor(Math.random() * 10) + 1;
-let randomNumber3 = Math.floor(Math.random() * 10) + 1;
-let randomNumber4 = Math.floor(Math.random() * 10) + 1;
-let randomNumber5 = Math.floor(Math.random() * 10) + 1;
+/*
+TASK
+Generate 5 random numbers bt 1 and 10 (both inclusive)
+Store them in array
+Find first and last element from the array
+Calculate and return their average
+*/
 
-const randNum = [randomNumber1, randomNumber2, randomNumber3, randomNumber4, randomNumber5];
 
-console.log(randNum[0]);
-console.log(randNum[randNum.length - 1]);
 
-console.log((randNum[0] + randNum[randNum.length - 1]) / 2);
+const arr = 
+[
+    Math.floor(Math.random() * 10) + 1,
+    Math.floor(Math.random() * 10) + 1,
+    Math.floor(Math.random() * 10) + 1,
+    Math.floor(Math.random() * 10) + 1,
+    Math.floor(Math.random() * 10) + 1
+];
 
-const arr = [];
-
-console.log(arr.length); // 0
-
-arr.push("Apple");
-console.log(arr.length); // 1
-console.log(arr); // [ 'Apple' ]
-
-arr.push("Orange", "Kiwi", "Banana");
-
-console.log(arr.length); // 4
-console.log(arr); // [ 'Apple', 'Orange', 'Kiwi', 'Banana' ]
+console.log(arr);
+console.log(`The average of first and last random number is ${(arr[0] + arr[arr.length - 1]) / 2}`);
