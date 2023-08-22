@@ -18,3 +18,11 @@ students.pop();
 
 console.log(students); // [ 'Alex', 'John', 'John' ]
 
+const newArry = [];
+
+let result = newArry.pop();
+
+console.log(result); // undefined
+
+
+
