@@ -1,0 +1,9 @@
+
+
+08-23-2023 JS Loops Introduction
+
+
+Recap:
+Array: Collection to store multiple values / elements / data (string, number, object)
+
+Array Funt
