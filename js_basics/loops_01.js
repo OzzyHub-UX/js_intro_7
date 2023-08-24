@@ -69,3 +69,36 @@ for(let i = 1; i <= 50; i++){
     if (i % 5 !== 0) continue;
     console.log(i);
 }
+
+console.log("---------------------");
+
+let sum = 0;
+
+for(let i = 1; i <= 5; i++){
+    sum += i;
+}
+
+console.log(sum);
+
+console.log("---------------------");
+
+let sum1 = 0;
+
+for(let i = 10; i <= 15; i++){
+    sum1 += i;
+}
+
+console.log(sum1);
+
+
+console.log("---------------------");
+
+let str = "TechGlobal School";
+let newStr = "";
+
+for(let i = 0; i <= str.length; i++){
+    console.log(str.charAt(i));
+}
+
+
+
