@@ -124,7 +124,7 @@ for(let i = 0; i <= storeObjects.length - 1; i++){
 
 console.log(`Elements starting with B or P = ${counter1}`);
 console.log(`Elements starting with book or pen = ${counter2}`);
-
+console.log();
 
 
 
