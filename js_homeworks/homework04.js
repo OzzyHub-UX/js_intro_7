@@ -119,7 +119,7 @@ let counter1 = 0;
 let counter2 = 0;
 for(let i = 0; i <= storeObjects.length - 1; i++){
     if(storeObjects[i].toUpperCase().startsWith('B') || storeObjects[i].toUpperCase().startsWith('P')) counter1++
-    else if(storeObjects[i].toUpperCase().includes("book") || storeOjects[i].toUpperCase().includes("pen")) counter2++
+    else if(storeObjects[i].toUpperCase().includes("book") || storeObjects[i].toUpperCase().includes("pen")) counter2++
 }
 
 console.log(`Elements starting with B or P = ${counter1}`);
