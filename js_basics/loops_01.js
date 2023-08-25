@@ -96,9 +96,20 @@ console.log("---------------------");
 let str = "TechGlobal School";
 let newStr = "";
 
-for(let i = 0; i <= str.length; i++){
+for(let i = 0; i <= str.length - 1; i++){
     console.log(str.charAt(i));
 }
+
+console.log("------------");
+
+let count = 0;
+
+for(let i = 0; i <= str.length - 1; i++){
+    if (str.toLowerCase().charAt(i) === "o") count++;
+}
+
+console.log(count);
+
 
 
 
