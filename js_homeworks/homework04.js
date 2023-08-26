@@ -127,31 +127,21 @@ console.log(`Elements starting with B or P = ${counter1}`);
 console.log(`Elements starting with book or pen = ${counter2}`);
 console.log();
 
-/*
-Requirement:
--Create an array that stores numbers below.
-3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78
 
-THEN:
--Output the entire array
--Output how many elements are more than 10
--Output how many elements are less than 10
--Output how many elements are 10
-
-Expected Result:
-[ 3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78 ]
-Elements that are more than 10 = 5
-Elements that are less than 10 = 4
-Elements that are 10 = 2
-
-*/
 // Task13
 console.log("\n-----------------------------\n");
 
 let numberArr = [3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78];
 console.log(numberArr);
 
+let is10 = 0, more10 = 0, less10 = 0;
+
 for(let i = 0; i <= numberArr.length - 1; i++){
-    if ()
+    if (numberArr[i] === 10) is10++;
+    else if (number[i] > 10) more10++;
+    else less10++;
 }
 
+console.log(`Elements that are more than 10 = ${more10}`);
+console.log(`Elements that are less than 10 = ${less10}`);
+console.log(`Elements that are 10 = ${is10}`);
