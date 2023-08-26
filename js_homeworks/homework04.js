@@ -153,16 +153,22 @@ console.log("\n-----------------------------\n");
 let fArray = [5, 8, 13, 1, 2];
 let sArray = [9, 3, 67, 1, 0];
 
-console.log(fArray);
-console.log(sArray);
+console.log(`1st array is = [ ${fArray} ]`);
+console.log(`2nd array is = [ ${sArray} ]`);
 
 let tArray = [];
 
-for (let i = 0; i <= tArray.length - 1; i++){
-    for (let z = 0; z <= sArray.length - 1; i++){
-        if (i > z) tArray.push(tArray[i]);
-        else tArray.push(tArray[z]);
-    }
-}
+    for (let i = 0; i <= fArray.length - 1; i++){
 
-console.log(tArray);
+        let element1 = fArray[i];
+        let element2 = sArray[i];
+
+        if (element1 > element2) tArray.push(element1);
+        else tArray.push(element2);
+    }
+
+    console.log(`3rd array is = [ ${tArray} ]`);
+
+
+// Task14
+
