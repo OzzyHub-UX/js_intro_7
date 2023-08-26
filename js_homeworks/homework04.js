@@ -138,10 +138,31 @@ let is10 = 0, more10 = 0, less10 = 0;
 
 for(let i = 0; i <= numberArr.length - 1; i++){
     if (numberArr[i] === 10) is10++;
-    else if (number[i] > 10) more10++;
+    else if (numberArr[i] > 10) more10++;
     else less10++;
 }
 
 console.log(`Elements that are more than 10 = ${more10}`);
 console.log(`Elements that are less than 10 = ${less10}`);
 console.log(`Elements that are 10 = ${is10}`);
+
+
+// Task 14
+console.log("\n-----------------------------\n");
+
+let fArray = [5, 8, 13, 1, 2];
+let sArray = [9, 3, 67, 1, 0];
+
+console.log(fArray);
+console.log(sArray);
+
+let tArray = [];
+
+for (let i = 0; i <= tArray.length - 1; i++){
+    for (let z = 0; z <= sArray.length - 1; i++){
+        if (i > z) tArray.push(tArray[i]);
+        else tArray.push(tArray[z]);
+    }
+}
+
+console.log(tArray);
