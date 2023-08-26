@@ -177,10 +177,16 @@ function firstDuplicate(array) {
 
     for(let i = 0; i <= array.length - 1; i++) {
 
-        if(array[i].includes(array[i])) console.log(i);
+        if(array.includes(array[i])) console.log(i);
         else return -1;
     }
 }
 
 console.log(firstDuplicate([3, 7, 10, 0, 3, 10]));
+
+
+// Task15
+console.log("\n-----------------------------\n");
+
+
 
