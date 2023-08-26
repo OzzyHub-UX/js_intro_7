@@ -170,5 +170,16 @@ let tArray = [];
     console.log(`3rd array is = [ ${tArray} ]`);
 
 
-// Task14
+// Task15
+console.log("\n-----------------------------\n");
 
+function firstDuplicate(array) {
+
+    for(let i = 0; i <= array.length - 1; i++) {
+
+        if(array[i] === array[i]) console.log(i);
+        else return -1;
+    }
+
+    console.log(firstDuplicate([ 3, 7, 10, 0, 3, 10 ]));
+}
