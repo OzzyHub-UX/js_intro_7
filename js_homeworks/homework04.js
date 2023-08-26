@@ -117,14 +117,41 @@ console.log(storeObjects);
 
 let counter1 = 0;
 let counter2 = 0;
+
 for(let i = 0; i <= storeObjects.length - 1; i++){
-    if(storeObjects[i].toUpperCase().startsWith('B') || storeObjects[i].toUpperCase().startsWith('P')) counter1++
-    else if(storeObjects[i].toUpperCase().includes("book") || storeObjects[i].toUpperCase().includes("pen")) counter2++
+    if(storeObjects[i].toLowerCase().startsWith('b') || storeObjects[i].toLowerCase().startsWith('p')) counter1++
+    else if(storeObjects[i].toLowerCase().includes("book") || storeObjects[i].toLowerCase().includes("pen")) counter2++
 }
 
 console.log(`Elements starting with B or P = ${counter1}`);
 console.log(`Elements starting with book or pen = ${counter2}`);
 console.log();
 
+/*
+Requirement:
+-Create an array that stores numbers below.
+3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78
 
+THEN:
+-Output the entire array
+-Output how many elements are more than 10
+-Output how many elements are less than 10
+-Output how many elements are 10
+
+Expected Result:
+[ 3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78 ]
+Elements that are more than 10 = 5
+Elements that are less than 10 = 4
+Elements that are 10 = 2
+
+*/
+// Task13
+console.log("\n-----------------------------\n");
+
+let numberArr = [3, 5, 7, 10, 0, 20, 17, 10, 23, 56, 78];
+console.log(numberArr);
+
+for(let i = 0; i <= numberArr.length - 1; i++){
+    if ()
+}
 
