@@ -1,57 +1,40 @@
-
 let number = 2;
-let randomNumb;
+
+let randomNumber;
+
 let attempts = 0;
 
 do {
-    randomNumb = Math.ceil(Math.random() * 10);
-}
-
-
-
-while (number !== randomNumber) {
-    console.log(randomNumber);
-    randomNumber = Math.ceil(Math.random() * 10);
+    randomNumber = Math.floor(Math.random() * 10) + 1;
     attempts++;
+} 
+while(number !== randomNumber);
+
+
+console.log(`The random number is finally ${randomNumber} and it is the number we looking for
+It took ${attempts} time/s attempts to generate it!`);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+let num = 1;
+while(num <= 3){
+    console.log("While loop - Hello World");
+    num++;
 }
 
-console.log(`The random number is finally ${randomNumber} and it is the number we looking for 
-It took ${attempts} time/s attempts to generate it!}`);
-
-
-
-console.log("\n----------------------------------------------------------------\n");
-
-// Playing the number guess game
-number = 5;
-
-randomNumber = Math.ceil(Math.random() * 10);
-
-attempts = 1;
-
-while (number !== randomNumber) {
-    console.log(randomNumber);
-    randomNumber = Math.ceil(Math.random() * 10);
-    attempts++;
-}
-
-console.log(`The random number is finally ${randomNumber} and it is the number we looking for 
-It took ${attempts} time/s attempts to generate it!}`);
-
-console.log("\n----------------------------------------------------------------\n");
-
-
-while(false){
-    console.log("Hello World");
-}
-
-console.log("\n----------------------------------------------------------------\n");
-
-
+num = 1;
 do {
-    console.log("Hello World");
-} while(false);
-
-console.log("\n----------------------------------------------------------------\n");
-
-
+    console.log("Do while Loop - Hello World"); // 3 times
+    num++;
+} while(num <= 3);

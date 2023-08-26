@@ -57,23 +57,22 @@ console.log(randomNum);
 // Task07
 console.log("\n-----------------------------\n");
 
-let randomNum1 = Math.ceil(Math.random() * 100);
-console.log(randomNum1);
+let randomNumber1;
+let attempts = 0;
 
-let count = 0;
-
-for(let i = randomNum1; i > 0; i--){
-    if (i % 5 === 0) count++;
+while(randomNumber1 % 5 !== 0) {
+    randomNumber1 = Math.ceil(Math.random() * 50);
+    attempts++;
 }
 
-if (count === 1) console.log(`The random number is ${randomNum1} and it took ${count} attempt to generate it.`);
-else console.log(`The random number is ${randomNum1} and it took ${count} attempts to generate it.`);
+console.log(`The random number is ${randomNumber1} and it took ${attempts}
+attempt/s to generate it.`);
 
 
 // Task08
 console.log("\n-----------------------------\n");
 
-let countries = ['Germany', 'Argentina', 'Ukraine', 'Romania'];
+const countries = ['Germany', 'Argentina', 'Ukraine', 'Romania'];
 
 console.log(countries);
 console.log(countries.sort());
@@ -82,7 +81,7 @@ console.log(countries.sort());
 // Task09
 console.log("\n-----------------------------\n");
 
-let cartoonDogs = ['Scooby Doo', 'Snoopy', 'Blue', 'Pluto', 'Dino', 'Sparky'];
+const cartoonDogs = ['Scooby Doo', 'Snoopy', 'Blue', 'Pluto', 'Dino', 'Sparky'];
 
 console.log(cartoonDogs);
 console.log(cartoonDogs.includes("Pluto"));
@@ -91,7 +90,7 @@ console.log(cartoonDogs.includes("Pluto"));
 // Task10
 console.log("\n-----------------------------\n");
 
-let cartoonCats = ['Garfield', 'Tom', 'Sylvester', 'Azrael'];
+const cartoonCats = ['Garfield', 'Tom', 'Sylvester', 'Azrael'];
 
 console.log(cartoonCats.sort());
 console.log(cartoonCats.includes("Garfield") && cartoonCats.includes("Felix"));
@@ -100,7 +99,7 @@ console.log(cartoonCats.includes("Garfield") && cartoonCats.includes("Felix"));
 // Task11
 console.log("\n-----------------------------\n");
 
-let numbers = [10.5, 20.75, 70, 80, 15.75];
+const numbers = [10.5, 20.75, 70, 80, 15.75];
 
 console.log(numbers);
 
@@ -112,20 +111,23 @@ for(let i = 0; i <= numbers.length - 1; i++){
 // Task12
 console.log("\n-----------------------------\n");
 
-let storeObjects = ['Pen', 'notebook', 'Book', 'paper', 'bag', 'pencil', 'Ruler'];
+const storeObjects = ['Pen', 'notebook', 'Book', 'paper', 'bag', 'pencil', 'Ruler'];
 console.log(storeObjects);
 
 let counter1 = 0;
 let counter2 = 0;
 
 for(let i = 0; i <= storeObjects.length - 1; i++){
-    if(storeObjects[i].toLowerCase().startsWith('b') || storeObjects[i].toLowerCase().startsWith('p')) counter1++
-    else if(storeObjects[i].toLowerCase().includes("book") || storeObjects[i].toLowerCase().includes("pen")) counter2++
+    if(storeObjects[i].toLowerCase().startsWith('b') || storeObjects[i].toLowerCase().startsWith('p')) counter1++;
 }
+
+for (const objects of storeObjects){
+    if(objects.toLowerCase().includes('book') || objects.toLowerCase().includes('pen')) counter2++;
+}
+
 
 console.log(`Elements starting with B or P = ${counter1}`);
 console.log(`Elements starting with book or pen = ${counter2}`);
-console.log();
 
 
 // Task13
@@ -180,9 +182,11 @@ function firstDuplicate(array) {
         if(array.includes(array[i])) console.log(i);
         else return -1;
     }
+    return; 
 }
 
-console.log(firstDuplicate([3, 7, 10, 0, 3, 10]));
+const arr = [3, 7, 10, 0, 3, 10];
+console.log(firstDuplicate(arr));
 
 
 // Task15
@@ -190,3 +194,29 @@ console.log("\n-----------------------------\n");
 
 
 
+// Task17
+console.log("\n-----------------------------\n");
+
+
+function reverseStringWords(str) {
+
+    let reversedStr = "";
+
+    for(let i = str.length - 1; i >= 0; i--){
+        reversedStr += str[i];
+    }
+
+    return reversedStr;
+}
+
+console.log(reverseStringWords("Hello World"));
+
+
+// Task18
+console.log("\n-----------------------------\n");
+
+let str = "Hello World";
+
+console.log(str.split(" "));
+
+c
