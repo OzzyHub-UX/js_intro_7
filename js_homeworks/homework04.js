@@ -1,7 +1,7 @@
 // Task01
 console.log("\n-----------------------------\n");
 
-for(let i = 1; i <= 100; i++){
+for (let i = 1; i <= 100; i++) {
     if (i % 7 === 0) console.log(i);
 }
 
@@ -9,15 +9,15 @@ for(let i = 1; i <= 100; i++){
 // Task02
 console.log("\n-----------------------------\n");
 
-for(let i = 1; i <= 50; i++){
-    if(i % 3 === 0 && i % 2 === 0) console.log(i);
+for (let i = 1; i <= 50; i++) {
+    if (i % 3 === 0 && i % 2 === 0) console.log(i);
 }
 
 
 // Task03
 console.log("\n-----------------------------\n");
 
-for(let i = 100; i >= 50; i--){
+for (let i = 100; i >= 50; i--) {
     if (i % 5 === 0) console.log(i);
 }
 
@@ -25,7 +25,7 @@ for(let i = 100; i >= 50; i--){
 // Task04
 console.log("\n-----------------------------\n");
 
-for(let i = 0; i <= 7; i++){
+for (let i = 0; i <= 7; i++) {
     console.log(`The sqaure of ${i} = ${i * i}`);
 }
 
@@ -35,8 +35,8 @@ console.log("\n-----------------------------\n");
 
 let sum = 0;
 
-for(let i = 1; i <= 10; i++){
-    sum += i; 
+for (let i = 1; i <= 10; i++) {
+    sum += i;
 }
 
 console.log(sum);
@@ -47,7 +47,7 @@ console.log("\n-----------------------------\n");
 
 let randomNum = Math.ceil(Math.random() * 10);
 
-for(let i = randomNum; i > 1; i--){
+for (let i = randomNum; i > 1; i--) {
     randomNum *= (i - 1);
 }
 
@@ -60,7 +60,7 @@ console.log("\n-----------------------------\n");
 let randomNumber1;
 let attempts = 0;
 
-while(randomNumber1 % 5 !== 0) {
+while (randomNumber1 % 5 !== 0) {
     randomNumber1 = Math.ceil(Math.random() * 50);
     attempts++;
 }
@@ -103,7 +103,7 @@ const numbers = [10.5, 20.75, 70, 80, 15.75];
 
 console.log(numbers);
 
-for(let i = 0; i <= numbers.length - 1; i++){
+for (let i = 0; i <= numbers.length - 1; i++) {
     console.log(numbers[i]);
 }
 
@@ -117,12 +117,12 @@ console.log(storeObjects);
 let counter1 = 0;
 let counter2 = 0;
 
-for(let i = 0; i <= storeObjects.length - 1; i++){
-    if(storeObjects[i].toLowerCase().startsWith('b') || storeObjects[i].toLowerCase().startsWith('p')) counter1++;
+for (let i = 0; i <= storeObjects.length - 1; i++) {
+    if (storeObjects[i].toLowerCase().startsWith('b') || storeObjects[i].toLowerCase().startsWith('p')) counter1++;
 }
 
-for (const objects of storeObjects){
-    if(objects.toLowerCase().includes('book') || objects.toLowerCase().includes('pen')) counter2++;
+for (const objects of storeObjects) {
+    if (objects.toLowerCase().includes('book') || objects.toLowerCase().includes('pen')) counter2++;
 }
 
 
@@ -138,7 +138,7 @@ console.log(numberArr);
 
 let is10 = 0, more10 = 0, less10 = 0;
 
-for(let i = 0; i <= numberArr.length - 1; i++){
+for (let i = 0; i <= numberArr.length - 1; i++) {
     if (numberArr[i] === 10) is10++;
     else if (numberArr[i] > 10) more10++;
     else less10++;
@@ -160,16 +160,16 @@ console.log(`2nd array is = [ ${sArray} ]`);
 
 let tArray = [];
 
-    for (let i = 0; i <= fArray.length - 1; i++){
+for (let i = 0; i <= fArray.length - 1; i++) {
 
-        let element1 = fArray[i];
-        let element2 = sArray[i];
+    let element1 = fArray[i];
+    let element2 = sArray[i];
 
-        if (element1 > element2) tArray.push(element1);
-        else tArray.push(element2);
-    }
+    if (element1 > element2) tArray.push(element1);
+    else tArray.push(element2);
+}
 
-    console.log(`3rd array is = [ ${tArray} ]`);
+console.log(`3rd array is = [ ${tArray} ]`);
 
 
 // Task15
@@ -177,39 +177,70 @@ console.log("\n-----------------------------\n");
 
 function firstDuplicate(array) {
 
-    for(let i = 0; i <= array.length - 1; i++) {
-
-        if(array.includes(array[i])) console.log(i);
-        else return -1;
+    for (i = 0; i <= array.length - 1; i++) {
+        for (j = i + 1; j <= array.length - 1; j++) {
+            if (array[i] === array[j]) return array[i];
+        }
     }
-    return; 
+    return -1;
 }
 
-const arr = [3, 7, 10, 0, 3, 10];
-console.log(firstDuplicate(arr));
+console.log(firstDuplicate([3, 7, 10, 0, 3, 10]));
+console.log(firstDuplicate([5, 7, 7, 0, 5, 10]));
+console.log(firstDuplicate([5, '5', 3, 7, 4]));
+console.log(firstDuplicate([123, 'abc', '123', 3, 'abc']));
+console.log(firstDuplicate([1, 2, 3]));
+console.log(firstDuplicate(['foo', 'abc', '123', 'bar']));
 
 
-// Task15
+// Task16
 console.log("\n-----------------------------\n");
 
+function getDuplicates(array) {
+
+    const newArr = [];
+
+    for (i = 0; i <= array.length - 1; i++) {
+        for (j = i + 1; j <= array.length - 1; j++) {
+            if (array[i] === array[j]) newArr.push(array[i]);
+        }
+    }
+    return newArr;
+}
+
+console.log(getDuplicates([0, -4, -7, 0, 5, 10, 45, -7, 0]));
+console.log(getDuplicates([1, 2, 5, 0, 7]));
+console.log(getDuplicates(['A', 'foo', '12', 12, 'bar', 'a', 'a', 'foo']));
+console.log(getDuplicates(['foo', '12', 12, 'bar', 'a']));
 
 
 // Task17
 console.log("\n-----------------------------\n");
 
+/*
+Write a function named as reverseStringWords() which takes a string as an argument and returns string back with each word separately reversed when invoked.
+
+NOTE: Make your code dynamic that works for any string. Make sure you consider extra spaces before and after words in the given string.
+
+Examples:
+reverseStringWords("Hello World") 		-> "olleH dlroW"
+reverseStringWords("I like JavaScript") 	-> "I ekil tpircSavaJ"
+reverseStringWords("Hello") 		-> "olleH"
+reverseStringWords("") 			-> ""
+reverseStringWords("    ") 		-> ""
+
+*/
 
 function reverseStringWords(str) {
 
-    let reversedStr = "";
+    let reverseStr = str.split(" ");
+    reverseStr.reverse().join(" ");
 
-    for(let i = str.length - 1; i >= 0; i--){
-        reversedStr += str[i];
+    for(let i = 0; i <= str.length - 1; i++) {
+        
     }
 
-    return reversedStr;
 }
-
-console.log(reverseStringWords("Hello World"));
 
 
 // Task18
@@ -219,4 +250,3 @@ let str = "Hello World";
 
 console.log(str.split(" "));
 
-c
