@@ -231,16 +231,7 @@ reverseStringWords("    ") 		-> ""
 
 */
 
-function reverseStringWords(str) {
-
-    let reverseStr = str.split(" ");
-    reverseStr.reverse().join(" ");
-
-    for(let i = 0; i <= str.length - 1; i++) {
-        
-    }
-
-}
+let str1 = "Hello Wolrd";
 
 
 // Task18
