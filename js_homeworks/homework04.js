@@ -125,6 +125,7 @@ for (const objects of storeObjects) {
     if (objects.toLowerCase().includes('book') || objects.toLowerCase().includes('pen')) counter2++;
 }
 
+// Try with one loop - if statement 
 
 console.log(`Elements starting with B or P = ${counter1}`);
 console.log(`Elements starting with book or pen = ${counter2}`);
