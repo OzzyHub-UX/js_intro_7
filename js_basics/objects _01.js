@@ -4,4 +4,4 @@ const person = {
     city : 'Chicago'
 };
 
-console.log(person.fN);
+console.log(person);
