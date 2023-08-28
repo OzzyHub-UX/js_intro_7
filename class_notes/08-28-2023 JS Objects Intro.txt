@@ -1,0 +1,26 @@
+
+
+08-23-2023 JS Objects Intro
+
+Real-life objects: Car, Phone, Computer, House, T-Shirt
+
+-We can convert any real life into programming objects - JavaScripts
+
+Car is an object and it has some characteristics 
+
+color   red
+body    SUV
+year    2023
+make    BMW
+model   X7
+haveAC  true
+
+
+const car = {
+    color : 'red',
+    year  : 2023,
+    make  : 'BMW'
+    model : 'X7'
+    body  : 'SUV'
+    hasAC : true
+};
