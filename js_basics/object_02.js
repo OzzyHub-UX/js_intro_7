@@ -1,95 +1,103 @@
+/*
+Create a student object with below info
+firstName : Alex
+lastName : Smith
+hobbies : Soccer - Watching movies
+exam_scores : midterm = 60 and final = 90
+
+Output your object to the console
+*/
 
 const student = {
-    firstName : 'Alex',
-    lastName : 'Smith',
-    hobbies : ['Soccer', 'Watching movies'],
-    exam_scores : {
-        midterm : 60,
-        final : 90,
+    firstName: 'Alex',
+    lastName: 'Smith',
+    hobbies: ['Soccer', 'Watching Movies'],
+    exam_scores: {
+        midterm: 60,
+        final: 90
     }
 };
 
-/*
-const examScores = {
-    midterm : 60,
-    final   : 90,
-};
-
-student.examScores = examScores;
-*/
-
 console.log(student);
 
-console.log("-----------------------------");
+/*
+Print hobbies -> [ 'Soccer', 'Watching Movies' ]
+Print exam_scores -> { midterm: 60, final: 90 }
+Print Soccer -> Soccer
+
+Find and print average of exam scores -> 75
+*/
 
 console.log(student.hobbies);
 console.log(student.exam_scores);
 console.log(student.hobbies[0]);
-console.log((student.exam_scores.midterm + student.exam_scores.final) / 2);
 
-console.log("-----------------------------");
+console.log(`The average of the exam scores is ${(student.exam_scores.midterm + student.exam_scores.final) / 2}`);
+
+
+/*
+Create a book object
+name is Amok
+author's first name is Stefan
+author's last name is Zweig
+genre is Novella
+*/
 
 const book = {
-    name : 'Amok',
-    author : {
-        fName : 'Stefan',
-        lName : 'Zewig',
+    name: 'Amok',
+    author: {
+        fname: 'Stefan',
+        lName: 'Zweig'
     },
-    genre : 'Novella',
+    genre: 'Novella'
 };
 
-console.log(book);
 
 
-console.log("-----------------------------");
+/*
+Create an array of books that stores 3 books information
+Stefan Zweig - Amok - Novella
+Orhan Pamuk - My Name Is Red - Historical Novel
+George Orwell - 1984 - Dystopian Literature
+*/
 
 const books = [
     {
-        name : 'Amok',
-        author : {
-            fName : 'Stefan',
-            lName : 'Zewig',
+        name: 'Amok',
+        author: {
+            fname: 'Stefan',
+            lName: 'Zweig'
         },
-        genre : 'Novella',
+        genre: 'Novella'
     },
-
     {
-        name : 'Harry Potter',
-        author : {
-            fName : 'Joanne',
-            lName : 'Rowling',
+        name: 'My Name Is Red',
+        author: {
+            fname: 'Orhan',
+            lName: 'Pamuk'
         },
-        genre : 'Fantasy',
+        genre: 'Historical Novel'
     },
-
     {
-        name : 'My Name Is Red',
-        author : {
-            fName : 'George',
-            lName : 'Orwell',
+        name: '1984',
+        author: {
+            fname: 'George',
+            lName: 'Orwell'
         },
-        genre : 'Historical',
-    },
+        genre: 'Dystopian Literature'
+    }
 ];
 
-console.log(books);
 console.log(books.length); // 3
-console.log(books[1]); // {name: 'Harry Potter',author: { fName: 'Joanne', lName: 'Rowling' },genre: 'Fantasy'}
+console.log(books[1]); // { name: 'My Name Is Red', author: { fname: 'Orhan', lName: 'Pamuk' }, genre: 'Historical Novel' }
 console.log(books[2].author.lName); // Orwell
 
 
+// Count the books where Author first name has an 'a' -> 2
 let count = 0;
 
-for (let i = 0; i <= books.length - 1; i++) {
-    if(books[i].author.fName.toLowerCase().includes('a')) count++;
-}
-
-console.log(count);
-
-count = 0;
-
 for(const book of books) {
-    if(book.author.fName.toLowerCase().includes('a')) count++;
+    if( book.author.fname.includes('a') ) count++;
 }
 
-console.log(count);
+console.log(`There are ${count} author/s that has a in their names`);
