@@ -119,11 +119,14 @@ let counter2 = 0;
 
 for (let i = 0; i <= storeObjects.length - 1; i++) {
     if (storeObjects[i].toLowerCase().startsWith('b') || storeObjects[i].toLowerCase().startsWith('p')) counter1++;
+    if (storeObjects[i].toLowerCase().includes('book') || storeObjects[i].toLowerCase().includes('pen')) counter2++;
 }
 
+/*
 for (const objects of storeObjects) {
     if (objects.toLowerCase().includes('book') || objects.toLowerCase().includes('pen')) counter2++;
 }
+*/
 
 // Try with one loop - if statement 
 
@@ -232,8 +235,22 @@ reverseStringWords("    ") 		-> ""
 
 */
 
-let str1 = "Hello Wolrd";
 
+function reverseStringWords(str) {
+
+    let newArr = str.trim().split("");
+
+    for(let i = 0; i <= newStr.length - 1; i++) {
+        newArr[i].reverse().join("").split(" ").reverse().join(" ");
+    }
+    return newStr;
+}
+
+console.log(reverseStringWords("Hello World"));
+
+let name = "Hello World          ";
+
+console.log(name.trim().split("").reverse().join("").split(" ").reverse().join(" "));
 
 // Task18
 console.log("\n-----------------------------\n");
