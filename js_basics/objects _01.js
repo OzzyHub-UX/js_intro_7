@@ -33,3 +33,24 @@ delete person['city'];
 
 console.log(person); //{ fName: 'Jane', age: 25 }
 
+
+const car = {
+    color : 'red',
+    year  : 2023,
+    make  : 'BMW',
+    model : 'X7',
+};
+
+
+
+car.color = 'black';
+console.log(car.color);
+console.log(car.year);
+console.log(car.make);
+console.log(car.model);
+
+console.log("\n-----------------------------------\n");
+
+for(let key in car) {
+    console.log(key + ": " + person[key]);
+}
