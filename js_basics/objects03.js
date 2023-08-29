@@ -101,3 +101,11 @@ for(const user of users) {
 }
 
 console.log(`Names that start with A or I is = ${count}`);
+
+count = 0;
+
+for(const user of users) {
+    if(user.email.toLowerCase().includes("@gmail.com") || user.firstName.toLowerCase().includes("@gmail.com")) count++;
+}
+
+console.log(`Users that has email with gmail domain = ${count}`);
