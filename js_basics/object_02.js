@@ -17,5 +17,13 @@ const examScores = {
 
 student.examScores = examScores;
 */
+
 console.log(student);
+
+console.log("-----------------------------");
+
+console.log(student.hobbies);
+console.log(student.exam_scores);
+console.log(student.hobbies[0]);
+console.log((student.exam_scores.midterm + student.exam_scores.final) / 2);
 
