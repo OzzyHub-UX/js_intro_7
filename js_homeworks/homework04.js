@@ -223,8 +223,7 @@ function reverseStringWords(str) {
         newStr[i] = newStr[i].split("").reverse().join("");
     }
 
-    newStr = newStr.join(" ");
-    return newStr;
+    return newStr.join(" ");
 }
 
 console.log(reverseStringWords("Hello World"));
@@ -233,7 +232,68 @@ console.log(reverseStringWords("Hello World"));
 // Task18
 console.log("\n-----------------------------\n");
 
-let str = "Hello World";
+function getEvens(num1, num2){
 
-console.log(str.split(" "));
+    let newArr = [];
+    let start = Math.min(num1, num2);
+    let end = Math.max(num1, num2)
 
+    for(i = start; i <= end; i++){
+        if(i % 2 === 0) newArr.push(i);
+    };
+
+    return newArr;
+};
+
+console.log(getEvens(2,7));
+console.log(getEvens(17,5));
+console.log(getEvens(4,4));
+console.log(getEvens(3,3));
+
+
+// Task19
+console.log("\n-----------------------------\n");
+
+function getMultipleOf5(num1, num2) {
+
+    let newArr = [];
+    let start = Math.min(num1, num2);
+    let end = Math.max(num1, num2);
+
+    for(i = start; i <= end; i++){
+        if(i % 5 === 0) newArr.push(i);
+    };
+
+    return newArr;
+};
+
+console.log(getMultipleOf5(3,17));
+console.log(getMultipleOf5(23,5));
+console.log(getMultipleOf5(5,5));
+console.log(getMultipleOf5(2,4));
+
+
+// Task20
+console.log("\n-----------------------------\n");
+
+function fizzBuzz(num1, num2) {
+
+    let newArr = [];
+
+    let start = Math.min(num1, num2);
+    let end = Math.max(num1, num2);
+
+    for(let i = start; i <= end; i++){
+        if(i % 5 === 0 && i % 3 === 0) newArr.push('FizzBuzz');
+        else if(i % 5 === 0) newArr.push('Buzz');
+        else if(i % 3 === 0) newArr.push('Fizz');
+        else newArr.push(i);
+    };
+
+    return newArr.join(" | ");
+};
+
+console.log(fizzBuzz(13,18));
+console.log(fizzBuzz(12,5));
+console.log(fizzBuzz(5,5));
+console.log(fizzBuzz(9,6));
