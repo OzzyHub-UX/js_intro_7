@@ -1,4 +1,3 @@
-
 const users = [
     {
         "id": 1,
@@ -92,34 +91,40 @@ const users = [
         "dob": "2023-08-04"
     }
 ];
-
-let count = 0;
-
-for(const user of users) {
-    if(user.firstName.toLowerCase().startsWith('a') || user.firstName.toLowerCase().startsWith('i')) count++;
+// Count how many names starts with A or I  -> 4
+// Count how many users has email with gmail domain     -> 9
+// Count how many users were born in January, February or March     -> 3
+let countAI = 0;
+let countGmail = 0;
+let countM = 0;
+for(const user of users){
+   //if( user.firstName.toLowerCase()[0] === 'a' || user.firstName.toLowerCase()[0] === 'i' ) countAI++;
+   if('AI'.includes(user.firstName.toUpperCase()[0])) countAI++;
+   if(user.email.indexOf('gmail.com') !== -1) countGmail++;
+   if(parseInt(user.dob.split('-')[1]) <= 3) countM++;
 }
-
-console.log(`Names that start with A or I is = ${count}`);
-
-console.log("\n----------------------------------------------------------------------------\n");
-
-count = 0;
-
-for(const user of users) {
-    if(user.email.endsWith("@gmail.com")) count++;
+console.log(countAI); // 4
+console.log(countGmail); // 9
+console.log(countM); // 3
+const user = {
+    "id": 1900,
+    "firstName": "Yurii",
+    "lastName": "Bazhenov",
+    "email": "bazhenovyura333@gmail.com",
+    "dob": "2023-08-04"
+};
+console.log(Object.keys(user));
+console.log(Object.values(user));
+console.log(Object.entries(user));
+for(const key of Object.keys(user)){
+    console.log(`${key} / ${user[key]}`);
 }
-
-console.log(`Users that has email with domain gmail = ${count}`);
-
-
-console.log("\n----------------------------------------------------------------------------\n");
-
-
-count = 0;
-
-for(const user of users) {
-    if(parseInt(user.dob.split("-")[1]) <= 3) count++;
+for(const key in user){
+    console.log(user[key]);
 }
-
-console.log(`Users that were born in January, February, or March = ${count}`);
-
+for(const value of Object.values(user)){
+    console.log(value);
+}
+for(const [key, value] of Object.entries(user)){
+    console.log(`The key is '${key}' and the value for that key is '${value}'`)
+}
