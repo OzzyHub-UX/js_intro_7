@@ -134,3 +134,4 @@ for(const value of Object.values(user)){
 for(const [key, value] of Object.entries(user)){
     console.log(`The key is '${key}' and the value for that key is '${value}'`)
 }
+
