@@ -1,5 +1,4 @@
 
-
 const users = [
     {
         "id": 1,
@@ -102,10 +101,25 @@ for(const user of users) {
 
 console.log(`Names that start with A or I is = ${count}`);
 
+console.log("\n----------------------------------------------------------------------------\n");
+
 count = 0;
 
 for(const user of users) {
-    if(user.email.toLowerCase().includes("@gmail.com") || user.firstName.toLowerCase().includes("@gmail.com")) count++;
+    if(user.email.endsWith("@gmail.com")) count++;
 }
 
-console.log(`Users that has email with gmail domain = ${count}`);
+console.log(`Users that has email with domain gmail = ${count}`);
+
+
+console.log("\n----------------------------------------------------------------------------\n");
+
+
+count = 0;
+
+for(const user of users) {
+    if(parseInt(user.dob.split("-")[1]) <= 3) count++;
+}
+
+console.log(`Users that were born in January, February, or March = ${count}`);
+
