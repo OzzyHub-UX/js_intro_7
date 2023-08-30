@@ -63,7 +63,26 @@ console.log("\n----------------------------------------------\n");
 let countOlder30 = 0;
 
 for (const user of users){
-    if(user.age > 30) countOlder30++;
+    if(user['age'] > 30) countOlder30++;
 }
 
 console.log(`There are ${countOlder30} user/s older than 30`);
+
+
+console.log("\n----------------------------------------------\n");
+
+
+const olderThan30 = users.filter(user => user.age > 30).length;
+
+console.log(olderThan30);
+
+
+console.log("\n----------------------------------------------\n");
+
+let countCityChi = 0;
+
+for (const user of users){
+    if(user['address']['city'].toLowerCase() === 'chicago') countCityChi++;
+}
+
+console.log(`There are ${countCityChi} user/s that live in Chicago.`);
