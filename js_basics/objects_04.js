@@ -86,3 +86,27 @@ for (const user of users){
 }
 
 console.log(`There are ${countCityChi} user/s that live in Chicago.`);
+
+
+console.log("\n----------------------------------------------\n");
+
+const namesYoungerThan35 = [];
+
+for (const user of users) {
+    if (user.age < 35) {
+        namesYoungerThan35.push(`${user.firstName}`);
+    }
+}
+
+console.log(namesYoungerThan35);
+
+
+console.log("\n----------------------------------------------\n");
+
+let sumOfAges = 0;
+
+for(const user of users) {
+    sumOfAges += user.age;
+}
+
+console.log(`The average of all the ages = ${sumOfAges/users.length}`);
