@@ -94,6 +94,8 @@ const users = [
 // Count how many names starts with A or I  -> 4
 // Count how many users has email with gmail domain     -> 9
 // Count how many users were born in January, February or March     -> 3
+
+
 let countAI = 0;
 let countGmail = 0;
 let countM = 0;
@@ -103,6 +105,8 @@ for(const user of users){
    if(user.email.indexOf('gmail.com') !== -1) countGmail++;
    if(parseInt(user.dob.split('-')[1]) <= 3) countM++;
 }
+
+
 console.log(countAI); // 4
 console.log(countGmail); // 9
 console.log(countM); // 3
@@ -116,6 +120,8 @@ const user = {
 console.log(Object.keys(user));
 console.log(Object.values(user));
 console.log(Object.entries(user));
+
+
 for(const key of Object.keys(user)){
     console.log(`${key} / ${user[key]}`);
 }
