@@ -157,26 +157,41 @@ let mostExpensive = {
     quantity : 0
 };
 
-let leastExpensiveProduct = appleStore[0];
+let leastExpensive = {
+    productName : null,
+    price : appleStore[0].price,
+    quantiy : 0
+};
+
+let leastQuantity = {
+    productName : null,
+    price : 0,
+    quantity : appleStore[0].quantity
+};
+
+let greatestQuantity = {
+    productName : null,
+    price : 0,
+    quantity : 0
+};
+
+
+let productNames = [];
 
 for(const product of appleStore){
     if(product.price > mostExpensive.price) mostExpensive = product;
-    if(product.price < leastExpensiveProduct.price) leastExpensiveProduct = product;
+    if (product.price < leastExpensive.price) leastExpensive = product;
+    if (product.quantity > greatestQuantity.quantity) greatestQuantity = product;
+    if (product.quantity < leastQuantity.quantity) leastQuantity = product;
+    productNames.push(product.productName);
 }
+
 
 
 
 console.log(`The most expensive product is a ${mostExpensive.productName}.`);
-console.log(`The least expensive product is ${leastExpensiveProduct}`);
-//console.log(`The product with the biggest quantity is ${}.`);
-//console.log(`The product with the smallest quantity is ${}.`);
-
-let productNames = [];
-
-for (const product of appleStore){
-    productNames.push(product.productName);
-}
-
+console.log(`The least expensive product is ${leastExpensive.productName}`);
+console.log(`The product with the biggest quantity is ${greatestQuantity.productName}.`);
+console.log(`The product with the smallest quantity is ${leastQuantity.productName}.`);
 console.log(productNames);
-
 
