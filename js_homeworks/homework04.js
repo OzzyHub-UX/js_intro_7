@@ -122,14 +122,6 @@ for (let i = 0; i <= storeObjects.length - 1; i++) {
     if (storeObjects[i].toLowerCase().includes('book') || storeObjects[i].toLowerCase().includes('pen')) counter2++;
 }
 
-/*
-for (const objects of storeObjects) {
-    if (objects.toLowerCase().includes('book') || objects.toLowerCase().includes('pen')) counter2++;
-}
-*/
-
-// Try with one loop - if statement 
-
 console.log(`Elements starting with B or P = ${counter1}`);
 console.log(`Elements starting with book or pen = ${counter2}`);
 
@@ -187,7 +179,7 @@ function firstDuplicate(array) {
         }
     }
     return -1;
-}
+};
 
 console.log(firstDuplicate([3, 7, 10, 0, 3, 10]));
 console.log(firstDuplicate([5, 7, 7, 0, 5, 10]));
@@ -205,12 +197,13 @@ function getDuplicates(array) {
     const newArr = [];
 
     for (i = 0; i <= array.length - 1; i++) {
-        for (j = i + 1; j <= array.length - 1; j++) {
-            if (array[i] === array[j]) newArr.push(array[i]);
-        }
-    }
+        let currentNums = array[i];
+        let rest = array.slice(i + 1);
+        if (rest.includes(currentNums)) newArr.push(currentNums);
+    };
     return newArr;
-}
+
+};
 
 console.log(getDuplicates([0, -4, -7, 0, 5, 10, 45, -7, 0]));
 console.log(getDuplicates([1, 2, 5, 0, 7]));
@@ -221,36 +214,21 @@ console.log(getDuplicates(['foo', '12', 12, 'bar', 'a']));
 // Task17
 console.log("\n-----------------------------\n");
 
-/*
-Write a function named as reverseStringWords() which takes a string as an argument and returns string back with each word separately reversed when invoked.
-
-NOTE: Make your code dynamic that works for any string. Make sure you consider extra spaces before and after words in the given string.
-
-Examples:
-reverseStringWords("Hello World") 		-> "olleH dlroW"
-reverseStringWords("I like JavaScript") 	-> "I ekil tpircSavaJ"
-reverseStringWords("Hello") 		-> "olleH"
-reverseStringWords("") 			-> ""
-reverseStringWords("    ") 		-> ""
-
-*/
-
 
 function reverseStringWords(str) {
 
-    let newArr = str.trim().split("");
+    let newStr = str.trim().split(" ");
 
     for(let i = 0; i <= newStr.length - 1; i++) {
-        newArr[i].reverse().join("").split(" ").reverse().join(" ");
+        newStr[i] = newStr[i].split("").reverse().join("");
     }
+
+    newStr = newStr.join(" ");
     return newStr;
 }
 
 console.log(reverseStringWords("Hello World"));
 
-let name = "Hello World          ";
-
-console.log(name.trim().split("").reverse().join("").split(" ").reverse().join(" "));
 
 // Task18
 console.log("\n-----------------------------\n");
