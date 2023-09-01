@@ -119,45 +119,20 @@ console.log(countVowels1("Hello World"));
 console.log(countVowels1("JavaScript is fun"));
 console.log(countVowels1(""));
 
-// Why in the for loop it returns the length
-
 
 //Task04
 console.log("\n-------------------------------------\n");
 
-function countConsonants0(str) {
-
-    let countConsonants0 = 0;
-    const vowelsArr = ['a', 'e', 'i', 'o', 'u'];
-
-
-    for(const letter of str){
-        for(const vowel of vowelsArr){
-            if(!(letter.includes(vowel))) countConsonants0++;
-        }
-    };
-    return countConsonants0;
-};
-
-console.log(countConsonants0("Hello"));
-console.log(countConsonants0("Hello World"));
-console.log(countConsonants0("JavaScript is fun"));
-console.log(countConsonants0(""));
-
-console.log("|\n|");
-
-
-
-
+//For Of Loop
 function countConsonants(str){
     
     let countConsonants = 0;
 
     for(const letter of str){
-        if(letter.toLowerCase() !== 'a' || 
-        letter.toLowerCase() !== 'e' || 
-        letter.toLowerCase() !== 'i' || 
-        letter.toLowerCase() !== 'o' || 
+        if(letter.toLowerCase() !== 'a' && 
+        letter.toLowerCase() !== 'e' &&
+        letter.toLowerCase() !== 'i' &&
+        letter.toLowerCase() !== 'o' &&
         letter.toLowerCase() !== 'u') countConsonants++;
     };
     return countConsonants;
@@ -176,16 +151,22 @@ function countConsonants1(str){
     let countConsonants1 = 0;
 
     for(let i = 0; i <= str.length - 1; i++){
-        if(str[i].toLowerCase() !== 'a' || str[i].toLowerCase() !== 'e' || str[i].toLowerCase() !== 'i' || str[i].toLowerCase() !== 'o' || str[i].toLowerCase() !== 'u') countConsonants1++;
+        if(str[i].toLowerCase() !== 'a' && 
+        str[i].toLowerCase() !== 'e' && 
+        str[i].toLowerCase() !== 'i' && 
+        str[i].toLowerCase() !== 'o' && 
+        str[i].toLowerCase() !== 'u') countConsonants1++;
     };
     return countConsonants1;
 };
 
 console.log(countConsonants1("Hello"));
-console.log(countConsonants1("Hello World"));
-console.log(countConsonants1("JavaScript is Fun"));
+console.log(countConsonants1("Hello Wolrd"));
+console.log(countConsonants1("JavaScript is fun"));
 console.log(countConsonants1(""));
 
 
+//Task05
+console.log("\n-------------------------------------\n");
 
 
