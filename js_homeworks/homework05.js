@@ -169,4 +169,49 @@ console.log(countConsonants1(""));
 //Task05
 console.log("\n-------------------------------------\n");
 
+//For Of Loop
+function countWords(str){
+
+    let countWords = 1;
+
+    for(const word of str.trim()){
+        if(word.includes(" ")) countWords++;
+    };
+    return countWords;
+};
+
+console.log(countWords("   JavaScript is fun   "));
+console.log(countWords("Cypress is an UI automation tool.  "));
+console.log(countWords("1 2 3 4"));
+
+console.log("|\n|");
+
+/*
+//For Loop
+function countWords1(str){
+     
+    let countWords1 = 1;
+
+    for(let i = 0; i <= str.length - 1; i++){
+
+        let newStr = str.trim();
+        if(newStr[i].includes(" ")) countWords1++;
+    };
+    return countWords1;
+};
+
+console.log(countWords1("   JavaScript is fun   "));
+console.log(countWords1("Cypress is an UI automation tool.  "));
+console.log(countWords1("1 2 3 4"));
+*/
+
+
+//Task06
+console.log("\n-------------------------------------\n");
+
+function factorial(number){
+
+    for(let i = 0; )
+}
+
 
