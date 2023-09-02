@@ -208,10 +208,3 @@ console.log(countWords1("1 2 3 4"));
 
 //Task06
 console.log("\n-------------------------------------\n");
-
-function factorial(number){
-
-    for(let i = 0; )
-}
-
-
