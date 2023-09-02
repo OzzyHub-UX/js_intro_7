@@ -35,3 +35,19 @@ console.log(product3(3, 5));
 console.log(product3(2, 0));
 console.log(product3(4, 3));
 
+
+console.log("|\n|");
+
+
+const fizzBuzz = (number) => {
+    if(number % 3 === 0 && number % 5 === 0) console.log('FizzBuzz');
+    else if (number % 3 === 0) console.log('Fizz');
+    else if (number % 5 === 0) console.log('Buzz');
+    else console.log(number);
+};
+
+fizzBuzz(2);
+
+const greeting = () => console.log("Hello");
+
+greeting();
