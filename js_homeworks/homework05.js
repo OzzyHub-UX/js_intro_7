@@ -17,7 +17,7 @@ console.log(countPos([-45,0,0,34,5,67]));
 console.log(countPos([-23,-4,0,2,5,90,123]));
 console.log(countPos([0,-1,-2,-3]));
 
-console.log("|\n|");
+console.log("\n|\n");
 
 //For Loop
 function countPos1(arr1) {
@@ -34,6 +34,26 @@ function countPos1(arr1) {
 console.log(countPos1([-45,0,0,34,5,67]));
 console.log(countPos1([-23,-4,0,2,5,90,123]));
 console.log(countPos1([0,-1,-2,-3]));
+
+
+console.log("\n|\n");
+
+
+// Filter() Arrow Function
+
+const arr1 = [-45,0,0,34,5,67];
+const arr2 = [-23,-4,0,2,5,90,123];
+const arr3 = [0,-1,-2,-3];
+
+const posNum = arr1.filter(number => number > 0);
+console.log(posNum.length); 
+
+const posNum1 = arr2.filter(number => number > 0);
+console.log(posNum1.length);
+
+const posNum2 = arr3.filter(number => number > 0);
+console.log(posNum2.length);
+
 
 
 //Task02
@@ -55,7 +75,7 @@ console.log(countA("TechGlobal is a QA bootcamp"));
 console.log(countA("QA Stands For Quality Assurance"));
 console.log(countA("Cypress"));
 
-console.log("|\n|");
+console.log("\n|\n");
 
 //For Loop
 function countA1(str){
@@ -97,7 +117,7 @@ console.log(countVowels("Hello World"));
 console.log(countVowels("JavaScript is fun"));
 console.log(countVowels(""));
 
-console.log("|\n|");
+console.log("\n|\n");
 
 //For Loop
 function countVowels1(str){
@@ -143,7 +163,7 @@ console.log(countConsonants("Hello World"));
 console.log(countConsonants("JavaScript is fun"));
 console.log(countConsonants(""));
 
-console.log("|\n|");
+console.log("\n|\n");
 
 //For Loop
 function countConsonants1(str){
@@ -184,7 +204,7 @@ console.log(countWords("   JavaScript is fun   "));
 console.log(countWords("Cypress is an UI automation tool.  "));
 console.log(countWords("1 2 3 4"));
 
-console.log("|\n|");
+console.log("\n|\n");
 
 /*
 //For Loop
