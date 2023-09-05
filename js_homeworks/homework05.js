@@ -214,10 +214,11 @@ const factorial = (number) => {
 
     let resultFactorial = number;
 
-    for(let i = number; i > 0; i--){
+    for(let i = number; i > 2; i--){
         resultFactorial *= (i - 1);
         console.log(resultFactorial);
     };
+    return resultFactorial;
 };
 
-console.log(factorial(5));
+console.log(factorial(0));
