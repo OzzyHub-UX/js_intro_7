@@ -212,11 +212,12 @@ console.log("\n-------------------------------------\n");
 
 const factorial = (number) => {
 
+    let resultFactorial = number;
+
     for(let i = number; i > 0; i--){
-        let resultFactorial = 0;
-        resultFactorial *= i * (i - 1);
+        resultFactorial *= (i - 1);
+        console.log(resultFactorial);
     };
-    return resultFactorial;
 };
 
 console.log(factorial(5));
