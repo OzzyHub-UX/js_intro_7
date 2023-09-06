@@ -256,4 +256,4 @@ const countMultipleWords = (arr1) => {
 
     
 
-}
+};
