@@ -216,9 +216,33 @@ const factorial = (number) => {
 
     for(let i = 1; i <= number; i++){
         factorial *= i;
-        console.log(factorial);
     };
     return factorial;
 };
 
+console.log(factorial(5));
+console.log(factorial(4));
+console.log(factorial(1));
 console.log(factorial(0));
+
+
+//Task07
+console.log("\n-------------------------------------\n");
+
+function isPalindrome(str){
+
+
+    for(let i = 0; i <= str.length - 1; i++){
+        for(let j = str.length - 1; j >= 0; i--)
+        if(str[i] === str[j]) return true;
+    };
+};
+
+console.log(isPalindrome("Hello"));
+console.log(isPalindrome("Kayak"));
+console.log(isPalindrome("civic"));
+console.log(isPalindrome("abba"));
+console.log(isPalindrome("ab a"));
+console.log(isPalindrome("123454321"));
+console.log(isPalindrome("A"));
+console.log(isPalindrome(""));
