@@ -229,7 +229,7 @@ console.log(factorial(0));
 //Task07
 console.log("\n-------------------------------------\n");
 
-function isPalindrome(str){
+const isPalindrome = (str) => {
 
     let newStr = str.trim().toLowerCase().split("").reverse().join("");
     let isPalindrome = false;
@@ -247,3 +247,13 @@ console.log(isPalindrome("ab a"));
 console.log(isPalindrome("123454321"));
 console.log(isPalindrome("A"));
 console.log(isPalindrome(""));
+
+
+//Task08
+console.log("\n-------------------------------------\n");
+
+const countMultipleWords = (arr1) => {
+
+    
+
+}
