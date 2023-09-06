@@ -212,13 +212,13 @@ console.log("\n-------------------------------------\n");
 
 const factorial = (number) => {
 
-    let resultFactorial = number;
+    let factorial = 1;
 
-    for(let i = number; i > 2; i--){
-        resultFactorial *= (i - 1);
-        console.log(resultFactorial);
+    for(let i = 1; i <= number; i++){
+        factorial *= i;
+        console.log(factorial);
     };
-    return resultFactorial;
+    return factorial;
 };
 
 console.log(factorial(0));
