@@ -1,1 +1,14 @@
 HTML: It a language we use to display everything we see on a web browser.
+TAGS: 
+    - head 
+    - body
+    - div
+    - img
+    - p
+
+ATTRIBUTES:
+    - img > src is a mandatory attribute, because we need the resource of the image.
+    - style this is an optional attribute
+
+STYLING:
+    - Tehre are 
