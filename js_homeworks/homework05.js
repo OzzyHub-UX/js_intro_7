@@ -234,11 +234,11 @@ function isPalindrome(str){
     let isPalindrome = false;
 
     for(let i = 0; i <= str.length - 1; i++){
-        for(let j = str.length - 1; j >= 0; i--)
+        for(let j = str.length - 1; j >= 0; j--)
         if(str[i] === str[j]) isPalindrome = true;
     };
     return isPalindrome;
-};
+}; 
 
 console.log(isPalindrome("Hello"));
 console.log(isPalindrome("Kayak"));
