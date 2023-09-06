@@ -254,6 +254,81 @@ console.log("\n-------------------------------------\n");
 
 const countMultipleWords = (arr1) => {
 
-    
-
+    let count = 0;
+    const newArr = arr1.filter(element => element.trim().includes(" ") ? count++ : count);
+    return count;
 };
+
+console.log(countMultipleWords(["foo", "", "    ", "foo bar", "     foo" ]));
+console.log(countMultipleWords([ "foo", "bar", "foobar", "     foobar   " ]));
+console.log(countMultipleWords([ "f o o", "b a r", "foo bar", "     foo bar   " ]));
+console.log(countMultipleWords([]));
+
+
+//Task09
+console.log("\n-------------------------------------\n");
+
+const count3OrLess = (str) => {
+
+    if(!str){
+        return 0;
+    }
+
+    else {
+    let newArr = str.trim().split(" ");
+    let count3Less = 0;
+    const newArr1 = newArr.filter(element => element.length <= 3 ? count3Less++ : count3Less);
+    
+    return count3Less;
+    };
+};
+
+console.log(count3OrLess("Hello"));
+console.log(count3OrLess("Hi John"));
+console.log(count3OrLess("Javascript is fun"));
+console.log(count3OrLess("My name is John Doe"));
+console.log(count3OrLess(""));
+
+
+//Task10
+console.log("\n-------------------------------------\n");
+
+const isPrime = (number) => {
+
+    if(number < 2) {
+        return false;
+    }
+
+    for(let i = 2; i <= Math.sqrt(number); i++){
+        if (number % i === 0) return false;
+    }
+    return true;
+};
+
+console.log(isPrime(5));
+console.log(isPrime(2));
+console.log(isPrime(29));
+console.log(isPrime(-5));
+console.log(isPrime(0));
+console.log(isPrime(1));
+
+
+//Task11
+console.log("\n-------------------------------------\n");
+function add(arr1, arr2) {
+    const maxLength = Math.max(arr1.length, arr2.length);
+    const result = [];
+
+    for (let i = 0; i < maxLength; i++) {
+        const sum = (arr1[i] || 0) + (arr2[i] || 0);
+        result.push(sum);
+    }
+
+    return result;
+};
+
+console.log(add([3, 0, 0, 7, 5, 10], [6, 3, 2]));
+
+
+//Task12
+console.log("\n-------------------------------------\n");
