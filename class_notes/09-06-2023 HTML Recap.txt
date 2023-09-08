@@ -11,4 +11,4 @@ ATTRIBUTES:
     - style this is an optional attribute
 
 STYLING:
-    - Tehre are 
+    - There are 
