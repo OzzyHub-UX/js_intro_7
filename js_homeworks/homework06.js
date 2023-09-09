@@ -53,37 +53,27 @@ console.log(hasVowel("ABC"));
 //Task04
 console.log("\n============Task04============\n");
 
-/*
-Write a function named checkAge() which takes a number argument to be considered as 
-the yearOfBirth and returns a message below based on the given year.
-
-If the age is less than 16, then print "AGE IS NOT ALLOWED”"
-If the age is 16 or more, then print "AGE IS ALLOWED"
-If the age is more than 120 or a future year, print "AGE IS NOT VALID"
-NOTE: Consider someone born in 2013 is 10 years old as of 2023.
-Examples:
-checkAge(2015) -> "AGE IS NOT ALLOWED"
-checkAge(2007) -> "AGE IS ALLOWED"
-checkAge(2050) -> "AGE IS NOT VALID"
-checkAge(1920) -> "AGE IS ALLOWED"
-checkAge(1800) -> "AGE IS NOT VALID"
-*/
-
 const checkAge = (num) => {
 
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
     const userAge = (currentYear - num);
 
-    if(userAge >= 120) console.log("AGE IS NOT VALID");
+    if(num > currentYear || userAge > 120) console.log("AGE IS NOT VALID");
     else if(userAge >= 16) console.log("AGE IS ALLOWED");
-    else console.log("AGE IS NOT VALID");
+    else console.log("AGE IS NOT ALLOWED");
 };
 
-checkAge(2015);
+checkAge(2015); 
 checkAge(2007);
 checkAge(2050);
 checkAge(1920);
 checkAge(1800);
+
+
+//Task05
+console.log("\n============Task05============\n");
+
+
 
 
