@@ -73,10 +73,17 @@ const checkAge = (num) => {
 
     const currentDate = new Date();
     const currentYear = currentDate.getFullYear();
+    const userAge = (currentYear - num);
 
-    
+    if(userAge >= 120) console.log("AGE IS NOT VALID");
+    else if(userAge >= 16) console.log("AGE IS ALLOWED");
+    else console.log("AGE IS NOT VALID");
+};
 
-
-}
+checkAge(2015);
+checkAge(2007);
+checkAge(2050);
+checkAge(1920);
+checkAge(1800);
 
 
