@@ -74,6 +74,39 @@ checkAge(1800);
 //Task05
 console.log("\n============Task05============\n");
 
+const averageOfEdges = (num1, num2, num3) => {
+
+    const maxNumber = Math.max(num1, num2, num3);
+    const minNumber = Math.min(num1, num2, num3);
+
+    return (maxNumber + minNumber) / 2;
+};
+
+console.log(averageOfEdges(0, 0, 0));
+console.log(averageOfEdges(0, 0, 6));
+console.log(averageOfEdges(-2, -2, 10));
+console.log(averageOfEdges(-3, 15, -3));
+console.log(averageOfEdges(10, 13, 20));
+
+
+//Task06
+console.log("\n============Task06============\n");
+
+const noA = (arr1) => {
+
+    return arr1.map((element) => eleemtn.includes("a") ? str.replaceAll("###") : )
+
+};
+
+noA(["javascript", "hello", "123", "xyz"]) 	
+noA(["apple", "123", "ABC", "javascript"])
+noA(["apple", "abc", "ABC", "Alex", "A"])
+
+console.log(noA(["javascript", "hello", "123", "xyz"]));
+console.log(noA(["apple", "123", "ABC", "javascript"]));
+console.log(noA(["apple", "abc", "ABC", "Alex", "A"]));
+
+
 
 
 
