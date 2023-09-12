@@ -93,12 +93,12 @@ console.log(averageOfEdges(10, 13, 20));
 console.log("\n============Task06============\n");
 
 const noA = (arr1) => {
-    arr1.map((element) => {
-        if (element.toLowerCase().includes('a')) {
-            return '###'
+    return arr1.map((element) => {
+        if (element.toLowerCase().startsWith('a')) {
+            return '###';
         }
     else {
-        return element
+        return element;
     }
 })
 };
@@ -108,6 +108,108 @@ console.log(noA(["apple", "123", "ABC", "javascript"]));
 console.log(noA(["apple", "abc", "ABC", "Alex", "A"]));
 
 
+//Task07
+console.log("\n============Task07============\n");
 
+const no3and5 = (arr1) => {
+
+    return arr1.map((element) => {
+        if(element % 15 === 0) {
+            return 101;
+        }
+        else if (element % 5 === 0) {
+            return 99;
+        }
+        else if (element % 3 === 0) {
+            return 100;
+        }
+        else {
+            return element;
+        }
+    })
+};
+
+console.log(no3and5([7, 4, 11, 23, 17]));
+console.log(no3and5([3, 4, 5, 6]));
+console.log(no3and5([10, 11, 12, 13, 14, 15]));
+
+
+//Task08
+console.log("\n============Task08============\n");
+
+const countPrimes = (arr) => {
+
+    let countPrime = 0;
+    arr.forEach(num => {
+        if(num < 2) return countPrime;
+        if(num === 2 || num === 3) return countPrime++;
+        if(num % 2 === 0 || num % 3 === 0) return countPrime;
+
+        let d = 5;
+
+        while(d < num){
+            if(num % d === 0) return countPrime;
+            d++;
+        }
+        return countPrime++;
+    });
+    
+    return countPrime;
+};
+
+console.log(countPrimes([-10, -3, 0, 1]));
+console.log(countPrimes([7, 4, 11, 23, 17]));
+console.log(countPrimes([41, 53, 19, 47, 67]));
+
+
+//Task09
+console.log("\n============Task09============\n");
+
+const removeDuplicates = (arr) => {
+
+    const newArr = [];
+
+    arr.forEach((element) => {
+        if(!newArr.includes(element))
+        newArr.push(element);
+    });
+    return newArr;
+};
+
+console.log(removeDuplicates([10, 20, 35, 20, 35, 60, 70, 60]));
+console.log(removeDuplicates([1, 2, 5, 2, 3]));
+console.log(removeDuplicates([0, -1, -2, -2, -1]));
+console.log(removeDuplicates(["abc", "xyz", "123", "ab", "abc", "ABC"]));
+console.log(removeDuplicates(["1", "2", "3", "2", "3"]));
+
+
+//Task10
+console.log("\n============Task10============\n");
+
+const isDateFormatValid = (str) => {
+    
+    let newArr = parseInt(str.split("/"));
+    let isValid = false;
+
+    if(str.length < 10) {
+        isValid = false;
+    }
+    else if(newArr.length === 3) {
+        const year = parseInt(arr[2]);
+        if(parseInt(newArr[0]) <= 12 && parseInt(newArr[1]) <= 31 && year.toString().length === 4){
+            isValid =  true;
+        }
+    }
+    return isValid;
+};
+
+console.log(isDateFormatValid(""));
+console.log(isDateFormatValid("15/30/2020"));
+console.log(isDateFormatValid("10-30-2020"));
+console.log(isDateFormatValid("10.30.2020"));
+console.log(isDateFormatValid("5/30/2020"));
+console.log(isDateFormatValid("05/30/2020"));
+console.log(isDateFormatValid("10/2/2020"));
+console.log(isDateFormatValid("10/02/2020"));
 
 
