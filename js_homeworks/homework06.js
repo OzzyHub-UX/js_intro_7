@@ -188,14 +188,14 @@ console.log("\n============Task10============\n");
 
 const isDateFormatValid = (str) => {
     
-    let newArr = parseInt(str.split("/"));
+    let newArr = (str.split("/"));
     let isValid = false;
 
     if(str.length < 10) {
         isValid = false;
     }
     else if(newArr.length === 3) {
-        const year = parseInt(arr[2]);
+        const year = parseInt(newArr[2]);
         if(parseInt(newArr[0]) <= 12 && parseInt(newArr[1]) <= 31 && year.toString().length === 4){
             isValid =  true;
         }
@@ -213,3 +213,5 @@ console.log(isDateFormatValid("10/2/2020"));
 console.log(isDateFormatValid("10/02/2020"));
 
 
+//Task11
+console.log("\n============Task11============\n");
