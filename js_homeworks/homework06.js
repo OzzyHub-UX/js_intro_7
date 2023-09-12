@@ -35,8 +35,8 @@ const hasVowel = (str) => {
 
     let newStr = str.toLowerCase();
 
-    for(let i = 0; i <= newStr.length - 1; i++){
-        for(let j = 0; j <= vowels.length - 1; j++) {
+    for (let i = 0; i <= newStr.length - 1; i++) {
+        for (let j = 0; j <= vowels.length - 1; j++) {
             if (newStr[i].includes(vowels[j])) return true;
         }
     };
@@ -59,12 +59,12 @@ const checkAge = (num) => {
     const currentYear = currentDate.getFullYear();
     const userAge = (currentYear - num);
 
-    if(num > currentYear || userAge > 120) console.log("AGE IS NOT VALID");
-    else if(userAge >= 16) console.log("AGE IS ALLOWED");
+    if (num > currentYear || userAge > 120) console.log("AGE IS NOT VALID");
+    else if (userAge >= 16) console.log("AGE IS ALLOWED");
     else console.log("AGE IS NOT ALLOWED");
 };
 
-checkAge(2015); 
+checkAge(2015);
 checkAge(2007);
 checkAge(2050);
 checkAge(1920);
@@ -93,14 +93,15 @@ console.log(averageOfEdges(10, 13, 20));
 console.log("\n============Task06============\n");
 
 const noA = (arr1) => {
-
-    return arr1.map((element) => eleemtn.includes("a") ? str.replaceAll("###") : )
-
+    arr1.map((element) => {
+        if (element.toLowerCase().includes('a')) {
+            return '###'
+        }
+    else {
+        return element
+    }
+})
 };
-
-noA(["javascript", "hello", "123", "xyz"]) 	
-noA(["apple", "123", "ABC", "javascript"])
-noA(["apple", "abc", "ABC", "Alex", "A"])
 
 console.log(noA(["javascript", "hello", "123", "xyz"]));
 console.log(noA(["apple", "123", "ABC", "javascript"]));
