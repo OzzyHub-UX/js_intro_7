@@ -50,4 +50,45 @@ Input: [1,2,3] function(num) {return num /2} Output: [.5, 1. 1.5]
 Input: [1,2,3] function(num) {return num - 2} Output: [-1, 0, 1]
 */
 
-const 
+
+function applyFunctionToNumbers(arr, func) {
+    const result = [];
+  
+    for (let i = 0; i < arr.length; i++) {
+      const element = arr[i];
+      result.push(func(element));
+    }
+    return result;
+  };
+
+const inputArray = [1, 2, 3];
+
+function double(num) {
+  return num * 2;
+};
+
+function increment(num) {
+  return num + 1;
+};
+
+function divideBy2(num) {
+  return num / 2;
+};
+
+function subtract2(num) {
+  return num - 2;
+};
+
+console.log(applyFunctionToNumbers(inputArray, double));
+console.log(applyFunctionToNumbers(inputArray, increment)); 
+console.log(applyFunctionToNumbers(inputArray, divideBy2)); 
+console.log(applyFunctionToNumbers(inputArray, subtract2)); 
+
+
+
+
+
+
+
+
+
