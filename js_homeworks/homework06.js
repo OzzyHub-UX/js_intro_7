@@ -256,6 +256,7 @@ const secondMin = (arr) => {
     }
     return secondSmallest;
 };
+ 
 
 console.log(secondMin([7, 4, 4, 4, 23, 23, 23]));
 console.log(secondMin([3, 4, 5, 6]));
