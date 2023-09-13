@@ -1,0 +1,4 @@
+this keyword
+
+JavaScript is a functional programming langauge
+
