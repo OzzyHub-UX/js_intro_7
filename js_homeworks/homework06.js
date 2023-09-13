@@ -97,10 +97,10 @@ const noA = (arr1) => {
         if (element.toLowerCase().startsWith('a')) {
             return '###';
         }
-    else {
-        return element;
-    }
-})
+        else {
+            return element;
+        }
+    })
 };
 
 console.log(noA(["javascript", "hello", "123", "xyz"]));
@@ -114,7 +114,7 @@ console.log("\n============Task07============\n");
 const no3and5 = (arr1) => {
 
     return arr1.map((element) => {
-        if(element % 15 === 0) {
+        if (element % 15 === 0) {
             return 101;
         }
         else if (element % 5 === 0) {
@@ -141,19 +141,19 @@ const countPrimes = (arr) => {
 
     let countPrime = 0;
     arr.forEach(num => {
-        if(num < 2) return countPrime;
-        if(num === 2 || num === 3) return countPrime++;
-        if(num % 2 === 0 || num % 3 === 0) return countPrime;
+        if (num < 2) return countPrime;
+        if (num === 2 || num === 3) return countPrime++;
+        if (num % 2 === 0 || num % 3 === 0) return countPrime;
 
         let d = 5;
 
-        while(d < num){
-            if(num % d === 0) return countPrime;
+        while (d < num) {
+            if (num % d === 0) return countPrime;
             d++;
         }
         return countPrime++;
     });
-    
+
     return countPrime;
 };
 
@@ -170,8 +170,8 @@ const removeDuplicates = (arr) => {
     const newArr = [];
 
     arr.forEach((element) => {
-        if(!newArr.includes(element))
-        newArr.push(element);
+        if (!newArr.includes(element))
+            newArr.push(element);
     });
     return newArr;
 };
@@ -187,17 +187,17 @@ console.log(removeDuplicates(["1", "2", "3", "2", "3"]));
 console.log("\n============Task10============\n");
 
 const isDateFormatValid = (str) => {
-    
+
     let newArr = (str.split("/"));
     let isValid = false;
 
-    if(str.length < 10) {
+    if (str.length < 10) {
         isValid = false;
     }
-    else if(newArr.length === 3) {
+    else if (newArr.length === 3) {
         const year = parseInt(newArr[2]);
-        if(parseInt(newArr[0]) <= 12 && parseInt(newArr[1]) <= 31 && year.toString().length === 4){
-            isValid =  true;
+        if (parseInt(newArr[0]) <= 12 && parseInt(newArr[1]) <= 31 && year.toString().length === 4) {
+            isValid = true;
         }
     }
     return isValid;
@@ -221,7 +221,7 @@ const secondMax = (arr) => {
     let largestNumber = arr[0];
     let secondLargestNumber = arr[0];
 
-    for(let i = 0; i <= arr.length - 1; i++) {
+    for (let i = 0; i <= arr.length - 1; i++) {
         if (arr[i] > largestNumber) {
             secondLargestNumber = largestNumber;
             largestNumber = arr[i];
@@ -241,19 +241,23 @@ console.log("\n============Task12============\n");
 
 const secondMin = (arr) => {
 
-    let minNumber = arr[0];
-    let secondMinNumber = arr[0];
+    if(arr.length === 1) return arr[0];
 
-    for(let i = 0; i <= arr.length - 1; i++) {
-        if(arr[i] < minNumber)
-        secondMinNumber = minNumber
-        minNumber = arr[i];
+    let smallest = Infinity;
+    let secondSmallest = Infinity;
+
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] < smallest) {
+      secondSmallest = smallest;
+      smallest = arr[i];
+    } else if (arr[i] < secondSmallest && arr[i] !== smallest) {
+      secondSmallest = arr[i];
     }
-    return secondMinNumber; 
+  }
+  return secondSmallest;
 };
 
 console.log(secondMin([7, 4, 4, 4, 23, 23, 23]));
 console.log(secondMin([3, 4, 5, 6]));
 console.log(secondMin([10]));
 console.log(secondMin([10, 15, 20, 25]));
-
