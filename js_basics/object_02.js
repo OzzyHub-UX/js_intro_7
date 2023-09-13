@@ -8,18 +8,20 @@ exam_scores : midterm = 60 and final = 90
 Output your object to the console
 */
 
+
+
 const student = {
     firstName: 'Alex',
     lastName: 'Smith',
     hobbies: ['Soccer', 'Watching Movies'],
     exam_scores: {
         midterm: 60,
-        final: 90
+        final : 90
     }
 };
 
-console.log(student);
 
+    console.log(student);
 /*
 Print hobbies -> [ 'Soccer', 'Watching Movies' ]
 Print exam_scores -> { midterm: 60, final: 90 }
