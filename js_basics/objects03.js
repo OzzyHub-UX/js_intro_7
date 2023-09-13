@@ -109,7 +109,8 @@ for(const user of users){
 
 console.log(countAI); // 4
 console.log(countGmail); // 9
-console.log(countM); // 3
+console.log(countM); // 3  
+
 const user = {
     "id": 1900,
     "firstName": "Yurii",
@@ -131,7 +132,7 @@ for(const key in user){
 for(const value of Object.values(user)){
     console.log(value);
 }
-for(const [key, value] of Object.entries(user)){
-    console.log(`The key is '${key}' and the value for that key is '${value}'`)
-}
 
+for(const [key, value] of Object.entries(user)) {
+    console.log(`The key is '${key}' and the value for that key is '${value}'`);
+};
