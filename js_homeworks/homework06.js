@@ -215,3 +215,31 @@ console.log(isDateFormatValid("10/02/2020"));
 
 //Task11
 console.log("\n============Task11============\n");
+
+const secondMax = (arr) => {
+
+    let largestNumber = arr[0];
+    let secondLargestNumber = arr[0];
+
+    for(let i = 0; i <= arr.length - 1; i++) {
+        if (arr[i] > largestNumber) { // 23 > 7 t
+            secondLargestNumber = largestNumber;
+            largestNumber = arr[i]; // 23
+        }
+        else if (arr[i] > secondLargestNumber && arr[i] !== largestNumber) { // 23 > 7 
+            secondLargestNumber = arr[i];
+        }
+    }
+
+    return secondLargestNumber;
+};
+
+console.log(secondMax([7, 4, 4, 4, 23, 23, 23]));
+console.log(secondMax([3, 4, 5, 6]));
+console.log(secondMax([10]));
+console.log(secondMax([10, 15, 20]));
+
+
+//Task12
+console.log("\n============Task12============\n");
+
