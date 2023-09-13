@@ -29,3 +29,7 @@ function showAddress() {
 }
 
 console.log(showAddress());
+
+console.log("foo:", foo);
+console.log("bar", bar);
+var foo = 'foo';
