@@ -222,15 +222,11 @@ const secondMax = (arr) => {
     let secondLargestNumber = arr[0];
 
     for(let i = 0; i <= arr.length - 1; i++) {
-        if (arr[i] > largestNumber) { // 23 > 7 t
+        if (arr[i] > largestNumber) {
             secondLargestNumber = largestNumber;
-            largestNumber = arr[i]; // 23
-        }
-        else if (arr[i] > secondLargestNumber && arr[i] !== largestNumber) { // 23 > 7 
-            secondLargestNumber = arr[i];
+            largestNumber = arr[i];
         }
     }
-
     return secondLargestNumber;
 };
 
@@ -242,4 +238,22 @@ console.log(secondMax([10, 15, 20]));
 
 //Task12
 console.log("\n============Task12============\n");
+
+const secondMin = (arr) => {
+
+    let minNumber = arr[0];
+    let secondMinNumber = arr[0];
+
+    for(let i = 0; i <= arr.length - 1; i++) {
+        if(arr[i] < minNumber)
+        secondMinNumber = minNumber
+        minNumber = arr[i];
+    }
+    return secondMinNumber; 
+};
+
+console.log(secondMin([7, 4, 4, 4, 23, 23, 23]));
+console.log(secondMin([3, 4, 5, 6]));
+console.log(secondMin([10]));
+console.log(secondMin([10, 15, 20, 25]));
 
