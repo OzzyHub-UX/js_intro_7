@@ -241,23 +241,55 @@ console.log("\n============Task12============\n");
 
 const secondMin = (arr) => {
 
-    if(arr.length === 1) return arr[0];
+    if (arr.length === 1) return arr[0];
 
     let smallest = Infinity;
     let secondSmallest = Infinity;
 
-  for (let i = 0; i < arr.length; i++) {
-    if (arr[i] < smallest) {
-      secondSmallest = smallest;
-      smallest = arr[i];
-    } else if (arr[i] < secondSmallest && arr[i] !== smallest) {
-      secondSmallest = arr[i];
+    for (let i = 0; i < arr.length; i++) {
+        if (arr[i] < smallest) {
+            secondSmallest = smallest;
+            smallest = arr[i];
+        } else if (arr[i] < secondSmallest && arr[i] !== smallest) {
+            secondSmallest = arr[i];
+        }
     }
-  }
-  return secondSmallest;
+    return secondSmallest;
 };
 
 console.log(secondMin([7, 4, 4, 4, 23, 23, 23]));
 console.log(secondMin([3, 4, 5, 6]));
 console.log(secondMin([10]));
 console.log(secondMin([10, 15, 20, 25]));
+
+
+//Task13
+console.log("\n============Task13============\n");
+
+const mostRepeated = (arr) => {
+
+    let mostRepeatedElement;
+    let maxCount = 0;
+
+    for (let i = 0; i < arr.length; i++) {
+        let count = 0;
+
+        for (let j = 0; j < arr.length; j++) {
+            if (arr[i] === arr[j]) {
+                count++;
+            }
+        }
+
+        if (count > maxCount) {
+            mostRepeatedElement = arr[i];
+            maxCount = count;
+        }
+    }
+
+    return mostRepeatedElement;
+};
+
+console.log(mostRepeated([4, 7, 4, 4, 4, 23, 23, 23]));
+console.log(mostRepeated(["pen", "pencil", "pen", "123", "abc", "pen", "pencil"]));
+console.log(mostRepeated([10]));
+console.log(mostRepeated(["TechGlobal"]));
