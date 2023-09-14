@@ -54,3 +54,7 @@ printHobbies.call(person2, hobbies[0], hobbies[1], hobbies[2]);
 
 
 // Apply 
+printHobbies.apply(person1, hobbies);
+
+// Bind
+const bindedPrintHobbies = printHobbies.bind(person1, hobbies[0], hobbies[1], hobbies[2]);
