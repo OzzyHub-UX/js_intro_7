@@ -31,3 +31,15 @@ function HQ(place) {
 }
 
 console.log(HQ());
+
+let counter = 0;
+
+const incrementChange = (num) => {
+    counter += num;
+    return counter;
+};
+
+console.log(incrementChange(2));
+console.log(incrementChange(6));
+console.log(incrementChange(-1));
+
