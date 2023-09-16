@@ -85,3 +85,8 @@ class cat2 {
     }
 
 }
+
+
+/**
+ * Object.create( => Look up examples and compare
+ */
