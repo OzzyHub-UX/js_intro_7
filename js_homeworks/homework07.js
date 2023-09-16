@@ -8,3 +8,5 @@ console.log();
 //Task04
 
 //Task05
+
+//Task06
