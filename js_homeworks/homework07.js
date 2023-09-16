@@ -5,3 +5,6 @@ console.log();
 
 //Task03
 
+//Task04
+
+//Task05
