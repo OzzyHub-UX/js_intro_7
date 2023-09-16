@@ -53,3 +53,35 @@ cat.prototype.getDetails = function() {
 };
 
 
+
+// Class
+
+class Animal2 {
+    constructor(name, breed) {
+        // header
+        this.name = name;
+        this.breed = breed;
+    }
+    // class body
+    getDetails() {
+        console.log((`${this.name} is a ${this.breed}`));
+    }
+
+}
+
+const animal = new Animal2('Zebra', 'White');
+console.log(animal);
+animal.getDetails();
+
+class cat2 {
+    constructor(name, breed) {
+        // header
+        this.name = name;
+        this.breed = breed;
+    }
+    // class body
+    getDetails() {
+        console.log((`${this.name} is a ${this.breed}`));
+    }
+
+}
