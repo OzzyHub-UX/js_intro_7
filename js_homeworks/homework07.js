@@ -21,10 +21,12 @@ console.log("--------------------TASK-02--------------------");
 const noDigit = (str) => {
 
     
-    const newArr
-    for(let i = 0; i <= str.length - 1; i++) {
+    const strArr = str.trim().split("");
 
-        if("123456789".includes(str[i])) return true;
+    const newArr = [];
+    for(let i = 0; i <= strArr.length - 1; i++) {
+
+        if("123456789".includes(strArr[i])) return true;
     }
     return false;
 }
