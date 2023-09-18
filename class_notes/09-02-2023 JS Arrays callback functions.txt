@@ -1,6 +1,4 @@
 
-
-
 09-02-2023 JS Arrays callback functions
 
 Arrays functions
