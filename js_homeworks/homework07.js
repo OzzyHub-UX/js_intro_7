@@ -20,13 +20,20 @@ console.log("--------------------TASK-02--------------------");
 
 const noDigit = (str) => {
 
+    
+    const newArr
     for(let i = 0; i <= str.length - 1; i++) {
 
-        
-
+        if("123456789".includes(str[i])) return true;
     }
+    return false;
 }
 
+console.log(noDigit(""));
+console.log(noDigit("Javascript"));
+console.log(noDigit("123Hello"));
+console.log(noDigit("123Hello World149"));
+console.log(noDigit("123Tech456Global149"));
 //Task03
 
 //Task04
