@@ -7,7 +7,7 @@ product(4, 3)   -> 12
 */
 
 // Regular function syntax
-function product2(n1, n2){
+function product1(n1, n2){
     return n1* n2;
 }
 
