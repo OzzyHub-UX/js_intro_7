@@ -158,4 +158,27 @@ function sumOfDigits(str) {
   //Task08
   console.log("--------------------TASK-08--------------------");
 
-
+  function categorizeCharacters(word) {
+    const result = ["", "", ""];
+  
+    for (let i = 0; i < word.length; i++) {
+      const char = word.charAt(i);
+      
+      if ((char >= 'a' && char <= 'z') || (char >= 'A' && char <= 'Z')) {
+        // Letter
+        result[0] += char;
+      } else if (char >= '0' && char <= '9') {
+        // Digit
+        result[1] += char;
+      } else {
+        // Special character
+        result[2] += char;
+      }
+    }
+  
+    return result;
+  }
+  
+  console.log(categorizeCharacters("1234"));  
+  console.log(categorizeCharacters("abc123$#%"));  
+  console.log(categorizeCharacters("12ab$%3c%"));
