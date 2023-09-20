@@ -106,5 +106,30 @@ function middleInt(num1, num2, num3) {
   console.log(middleInt(1, 1, 1));
   console.log(middleInt(-1, 25, 10));
 
-  
+
 //Task06
+console.log("--------------------TASK-06--------------------");
+
+function sumOfDigits(str) {
+    let sum = 0;
+  
+    for (let i = 0; i < str.length; i++) {
+      const char = str.charAt(i);
+      if (!isNaN(parseInt(char))) {
+        sum += parseInt(char);
+      }
+    }
+  
+    return sum;
+  }
+
+  console.log(sumOfDigits("Javascript"));
+  console.log(sumOfDigits("John's age is 29"));
+  console.log(sumOfDigits("$125.0"));
+  console.log(sumOfDigits(""));
+
+
+  //Task07
+
+
+  //Task08
