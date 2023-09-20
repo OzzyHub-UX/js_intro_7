@@ -130,6 +130,32 @@ function sumOfDigits(str) {
 
 
   //Task07
+  console.log("--------------------TASK-07--------------------");
+
+  function arrFactorial(numbers) {
+    const factorialArray = [];
+  
+    for (let i = 0; i < numbers.length; i++) {
+      let num = numbers[i];
+      let factorial = 1;
+  
+      for (let j = 2; j <= num; j++) {
+        factorial *= j;
+      }
+  
+      factorialArray.push(factorial);
+    }
+  
+    return factorialArray;
+  }
+  
+  console.log(arrFactorial([1, 2, 3, 4]));  
+  console.log(arrFactorial([0, 5]));  
+  console.log(arrFactorial([5, 0, 6]));  
+  console.log(arrFactorial([]));  
 
 
   //Task08
+  console.log("--------------------TASK-08--------------------");
+
+
