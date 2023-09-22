@@ -22,3 +22,5 @@ ul.appendChild(li3);
 
 document.body.appendChild(ul);
 
+console.log();
+
