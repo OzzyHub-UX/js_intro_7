@@ -45,3 +45,27 @@ const mouseOutBtn = document.getElementById('mouseOutBtn');
 mouseOutBtn.addEventListener('mouseout', (event) => {
     console.log('You moved out of =>', event.target);
 });
+
+
+/**
+ * Keyword Events
+ */
+
+const body = document.querySelector('body');
+
+//key down
+body.addEventListener('keydown', (event) => {
+    console.log('Keydown event => ', event.target);
+})
+
+// keyup
+body.addEventListener('keyup', (event) => {
+console.log('Keyup event =>', event.target)
+});
+
+
+//keypress
+body.addEventListener('keypress', (event) => {
+    console.log('Keypress event =>', event.target)
+    });
+    
