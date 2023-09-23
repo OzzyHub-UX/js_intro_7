@@ -47,25 +47,62 @@ mouseOutBtn.addEventListener('mouseout', (event) => {
 });
 
 
+// /**
+//  * Keyword Events
+//  */
+
+// const body = document.querySelector('body');
+
+// //key down
+// body.addEventListener('keydown', (event) => {
+//     console.log('Keydown event => ', event.target);
+// })
+
+// // keyup
+// body.addEventListener('keyup', (event) => {
+// console.log('Keyup event =>', event.target)
+// });
+
+
+// //keypress
+// body.addEventListener('keypress', (event) => {
+//     console.log('Keypress event =>', event.target)
+//     });
+
+
 /**
- * Keyword Events
+ * Form Events
  */
 
-const body = document.querySelector('body');
+const changeInput = document.getElementById('changeInput');
 
-//key down
-body.addEventListener('keydown', (event) => {
-    console.log('Keydown event => ', event.target);
-})
-
-// keyup
-body.addEventListener('keyup', (event) => {
-console.log('Keyup event =>', event.target)
+changeInput.addEventListener('change', (event) => {
+    // event.target.value => whatever user types on input 
+    console.log(event.target.value);
 });
 
 
-//keypress
-body.addEventListener('keypress', (event) => {
-    console.log('Keypress event =>', event.target)
-    });
-    
+//input
+const inputInput = document.getElementById('inputInput');
+
+inputInput.addEventListener('input', (event) => {
+    console.log(event.target.value);
+})
+
+
+//focus
+const formInput = document.getElementById('formInput');
+
+formInput.addEventListener('focus', (event) => {
+
+    event.target.style.backgroundColor = 'darkred';
+    event.target.style.color = 'white';
+})
+
+
+//blur
+formInput.addEventListener('blur', (event) => {
+    let element = event.target;
+    element.style.backgroundColor = '';
+    element.style.color = '';
+})
