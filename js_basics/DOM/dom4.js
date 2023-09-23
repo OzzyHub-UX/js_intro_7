@@ -37,3 +37,11 @@ const mouseMoveBtn = document.getElementById('mouseMoveBtn');
 mouseMoveBtn.addEventListener('mousemove', (event) => {
     console.log('You moving inside botton => ', event.target);
 });
+
+
+// mouseout 
+const mouseOutBtn = document.getElementById('mouseOutBtn');
+
+mouseOutBtn.addEventListener('mouseout', (event) => {
+    console.log('You moved out of =>', event.target);
+});
