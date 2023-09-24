@@ -106,3 +106,32 @@ formInput.addEventListener('blur', (event) => {
     element.style.backgroundColor = '';
     element.style.color = '';
 })
+
+//submit
+const formEl = document.querySelector('form');
+
+formEl.addEventListener('submit', (event) => {
+    event.preventDefault();
+    console.log('Form successfully submitted!');
+    console.log({
+        name: 'Joe',
+        email: 'joeemail.gmail.com'
+    });
+
+});
+
+/**
+ * 4. Window Event
+ */
+
+//scroll
+window.addEventListener('scroll', (event) => {
+    console.log('You are scrolling the page!');
+    console.log(`And your coordinates are X: ${window.scrollX} and Y: ${window.scrollY} `);
+});
+
+
+/*
+
+*/
+
