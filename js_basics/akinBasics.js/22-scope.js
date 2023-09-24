@@ -33,4 +33,41 @@ function sum(arr) {
     return total;
 }
 
-console.log(total); // ReferenceError: total is not defined
+// console.log(total); // ReferenceError: total is not defined - this behavior is same for var, let or const
+console.log(sum([1, 2, 3])); // 6
+
+
+// Block Scope
+
+{
+    var num1 = 1;
+    let num2 = 2;
+    const num3 = 3;
+      
+    console.log(num1);
+    console.log(num2)
+    console.log(num3);
+}
+
+console.log(num1); // 1
+// console.log(num2); // ReferenceError: num2 is not defined
+// console.log(num3); // ReferenceError: num3 is not defined
+
+
+
+// Lexical Scope: nest functions
+
+function outer() {
+    let outerVariable = 'OUTER';
+
+    function inner() {
+        let innVariable = 'INNER';
+        console.log(innVariable, outerVariable); // Access to both is valid
+    }
+    console.log(outerVariable); // OUTER
+    // console.log(innerVariable); // ReferenceError: innerVaribale is not deifned 
+
+    inner(); // INNER OUTER
+}
+
+outer(); 
