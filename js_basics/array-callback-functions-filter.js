@@ -50,3 +50,8 @@ console.log(fruits.filter(fruit => fruit.toLowerCase().includes('a') || fruit.to
 console.log(fruits.filter(fruit => fruit.toLowerCase().includes('i')).length);
 console.log(fruits.filter(fruit => fruit.toLowerCase().endsWith('e')).length);
 console.log(fruits.map(fruit => fruit[0] + fruit[fruit.length - 1]));
+
+
+const names1 = ['John', 'Yazan', 'Ameen', 'Imran', 'Atta'];
+
+console.log(names1.every(name => name.length === 4));
