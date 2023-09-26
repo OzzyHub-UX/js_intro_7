@@ -29,4 +29,5 @@ numbers.forEach((number) => console.log(number));
 numbers.forEach((number) => console.log(number * 5));
 
 // Print true for even numbers or false for odd numbers.
-numbers.forEach((number) => console.log(number % 2 === 0 ? true : false));
+numbers.forEach((number) => console.log(number % 2 === 0));
+
