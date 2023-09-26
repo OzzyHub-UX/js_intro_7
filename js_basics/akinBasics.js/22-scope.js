@@ -71,3 +71,27 @@ function outer() {
 }
 
 outer(); 
+
+
+
+
+// Closure
+
+function score() {
+    let initalScore = 0; // function scope and it cannot be accessed from outisde the function - it it is private to the score function
+    
+    const inner = function () {
+        return initalScore += 1
+    };
+    
+    return inner;
+};
+
+const anyFunction = score(); // initalScore = 1 and inner function is returned 
+
+console.log(anyFunction()); // 1
+console.log(anyFunction()); // 2
+console.log(anyFunction()); // 3 
+ 
+
+
