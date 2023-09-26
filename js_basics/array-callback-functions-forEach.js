@@ -31,3 +31,4 @@ numbers.forEach((number) => console.log(number * 5));
 // Print true for even numbers or false for odd numbers.
 numbers.forEach((number) => console.log(number % 2 === 0));
 
+// Create a new array that multiplies each of the numbers by 3
