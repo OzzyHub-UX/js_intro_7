@@ -109,8 +109,10 @@ startVowel("123") -> false
 const startVowel = (str) => {
     const firstLetter = str.slice(0,1).toLowerCase();
 
-    if(firstLetter === 'a' || firstLetter === 'e' || firstLetter === 'i')
-    return firstLetter;
+    if(firstLetter === 'a' || firstLetter === 'e' || 
+    firstLetter === 'i' || firstLetter === 'o'|| firstLetter === 'u') return true;
+
+    return false;
 }
 
 console.log(startVowel("Hello"));
@@ -119,3 +121,17 @@ console.log(startVowel("orange"));
 console.log(startVowel(""));
 console.log(startVowel(" "));
 console.log(startVowel("123"));
+
+
+console.log("\n----------------------------------\n");
+
+/*
+Write a function named averageOfEdges() which takes three number arguments and will
+return average of min and max numbers.
+Examples:
+averageOfEdges(0, 0, 0) -> 0
+averageOfEdges(0, 0, 6) -> 3
+averageOfEdges(-2, -2, 10) -> 4
+averageOfEdges(-3, 15, -3) -> 6
+averageOfEdges(10, 13, 20) -> 15
+*/
