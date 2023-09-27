@@ -59,5 +59,31 @@ console.log(firstLastWord(" "));
 console.log("\n----------------------------------\n");
 
 /*
-
+Has Vowel
+Write a function named hasVowel() which takes a string argument and returns true if the
+string has a vowel, returns false if the string doesn’t contain any vowel letter.
+NOTE: Vowels are = a, e, o, u, i.
+NOTE: Ignore upper/lower cases.
+Examples:
+hasVowel("") -> false
+hasVowel("Javascript") -> true
+hasVowel("Tech Global") -> true
+hasVowel("1234") -> false
+hasVowel("ABC") -> true
 */
+
+const hasVowel = (str) => {
+
+    for(const letter of str) {
+        if('aeiou'.includes(letter.toLowerCase())) return true;
+    }
+
+    return false;
+};
+
+
+console.log(hasVowel(""));
+console.log(hasVowel("Javascript"));
+console.log(hasVowel("Tech Global"));
+console.log(hasVowel("1234"));
+console.log(hasVowel("ABC"));
