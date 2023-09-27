@@ -87,3 +87,35 @@ console.log(hasVowel("Javascript"));
 console.log(hasVowel("Tech Global"));
 console.log(hasVowel("1234"));
 console.log(hasVowel("ABC"));
+
+
+console.log("\n----------------------------------\n");
+
+
+/*
+Start Vowel
+Write a function named as startVowel() which takes a string word as an argument and returns
+true if given string starts with a vowel, and false otherwise when invoked.
+NOTE: Vowel letters: a, e, i o, u, A, E, I, O, U
+Examples:
+startVowel("Hello") -> false
+startVowel("Apple") -> true
+startVowel("orange") -> true
+startVowel("") -> false
+startVowel(" ") -> false
+startVowel("123") -> false
+*/ 
+
+const startVowel = (str) => {
+    const firstLetter = str.slice(0,1).toLowerCase();
+
+    if(firstLetter === 'a' || firstLetter === 'e' || firstLetter === 'i')
+    return firstLetter;
+}
+
+console.log(startVowel("Hello"));
+console.log(startVowel("Apple"));
+console.log(startVowel("orange"));
+console.log(startVowel(""));
+console.log(startVowel(" "));
+console.log(startVowel("123"));
