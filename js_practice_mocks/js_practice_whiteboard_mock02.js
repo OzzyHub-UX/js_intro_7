@@ -135,3 +135,22 @@ averageOfEdges(-2, -2, 10) -> 4
 averageOfEdges(-3, 15, -3) -> 6
 averageOfEdges(10, 13, 20) -> 15
 */
+
+function averageOfEdges(num1, num2, num3) {
+
+    let max = Math.max(num1, num2, num3);
+    let min = Math.min(num1, num2, num3);
+
+    return (min + max) / 2;
+}
+
+console.log(averageOfEdges(0, 0, 0));
+console.log(averageOfEdges(0, 0, 6));
+console.log(averageOfEdges(-2, -2, 10));
+console.log(averageOfEdges(-3, 15, -3));
+console.log(averageOfEdges(10, 13, 20));
+
+
+console.log("\n----------------------------------\n");
+
+
