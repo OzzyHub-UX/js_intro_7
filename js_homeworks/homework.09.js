@@ -52,14 +52,18 @@ console.log(fizzBuzz2(2));
 console.log("\n---------TASK03---------\n");
 
 const findSumNumbers = (str) => {
-    let sum = 0;
+    const newArrWSpace = [];
 
     for (const char of str) {
-        if('0123456789'.includes(char)) {
-            if()
-        }
-        sum += Number(char)
+        if('0123456789'.includes(char)) newArrWSpace.push(Number(char))
+        else newArrWSpace.push(' ')
     };
+
+    const newArrWithoutSpace = newArrWSpace.join('').split(' ');
+    let sum = 0;
+    for(const element of newArrWithoutSpace) {
+        sum += Number(element);
+    }
     return sum; 
 };
 
@@ -68,6 +72,7 @@ const findSumNumbers = (str) => {
     console.log(findSumNumbers("ab110c045d"));
     console.log(findSumNumbers("525"));
     console.log(findSumNumbers("3 for 10 dollars"));
+
 
     // Task09
     console.log("\n---------TASK09---------\n");
