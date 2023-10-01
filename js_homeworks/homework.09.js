@@ -79,6 +79,8 @@ const findSumNumbers = (str) => {
     console.log("\n---------TASK04---------\n");
 
     const findBiggestNumber = (str) => {
+
+        
         const newArr = [];
 
         for(const char of str) {
@@ -87,10 +89,13 @@ const findSumNumbers = (str) => {
         };
 
         const newArr1 = newArr.join('').split(' ');
-
-        const newArr2 = newArr1.filter((element) => element)
-
-        return newArr2;
+        const newArr2 = newArr1.filter((element) => element.length > 0);
+       
+        let max = 0;
+        for(const element of newArr2) {
+            if(Number(element) > max) max = element;
+        }
+        return max;
     }
 
     console.log(findBiggestNumber("abc$"));
@@ -99,7 +104,7 @@ const findSumNumbers = (str) => {
     console.log(findBiggestNumber("525"));
     console.log(findBiggestNumber("3 for 10 dollars"));
 
-
+    
 
     // Task09
     console.log("\n---------TASK09---------\n");
