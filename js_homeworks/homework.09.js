@@ -2,9 +2,9 @@
 console.log("\n---------TASK01---------\n");
 
 const fizzBuzz1 = (num) => {
-    if(num % 15 === 0) console.log("FizzBuzz");
-    else if(num % 3 === 0) console.log("Fizz");
-    else if(num % 5 === 0) console.log("Buzz");
+    if (num % 15 === 0) console.log("FizzBuzz");
+    else if (num % 3 === 0) console.log("Fizz");
+    else if (num % 5 === 0) console.log("Buzz");
     else console.log(num);
 };
 
@@ -24,16 +24,16 @@ console.log("\n---------TASK02---------\n");
 const fizzBuzz2 = (num) => {
     const newArr = [];
 
-    for(let i = 1; i <= num; i++) {
-        if(i % 15 === 0) {
+    for (let i = 1; i <= num; i++) {
+        if (i % 15 === 0) {
             newArr.push('FizzBuzz')
             continue;
         }
-        if(i % 3 === 0) {
+        if (i % 3 === 0) {
             newArr.push('Fizz')
             continue;
         }
-        if(i % 5 === 0) {
+        if (i % 5 === 0) {
             newArr.push('Buzz')
             continue;
         }
@@ -54,24 +54,26 @@ console.log("\n---------TASK03---------\n");
 const findSumNumbers = (str) => {
     let sum = 0;
 
-    for(const i of str) {
-        if('0123456789'.includes(str)) sum += parseInt(str);
-    }
-    return sum
+    for (const char of str) {
+        if('0123456789'.includes(char)) {
+            if()
+        }
+        sum += Number(char)
+    };
+    return sum; 
 };
 
+    console.log(findSumNumbers("abc$"));
+    console.log(findSumNumbers("a1b4c 6#"));
+    console.log(findSumNumbers("ab110c045d"));
+    console.log(findSumNumbers("525"));
+    console.log(findSumNumbers("3 for 10 dollars"));
 
-console.log(findSumNumbers("abc$"));
-console.log(findSumNumbers("a1b4c 6#"));
-console.log(findSumNumbers("ab110c045d"));
-console.log(findSumNumbers("525"));
-console.log(findSumNumbers("3 for 10 dollars"));
+    // Task09
+    console.log("\n---------TASK09---------\n");
 
-// Task09
-console.log("\n---------TASK09---------\n");
+    const isPowerOf3 = (number) => (Math.pow(number, 3) % 3 === 0);
 
-const isPowerOf3 = (number) => (Math.pow(number, 3) % 3 === 0); 
+    console.log(isPowerOf3(15));
 
-console.log(isPowerOf3(15));
-
-console.log();
+    console.log();
