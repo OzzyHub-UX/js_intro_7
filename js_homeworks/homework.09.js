@@ -82,11 +82,16 @@ const findSumNumbers = (str) => {
         const newArr = [];
 
         for(const char of str) {
-            if('0123456789'.includes(str)) newArr.push(Number(char));
+            if('0123456789'.includes(char)) newArr.push(Number(char));
             else newArr.push(' ');
         };
-        return newArr;
-    };
+
+        const newArr1 = newArr.join('').split(' ');
+
+        const newArr2 = newArr1.filter((element) => element)
+
+        return newArr2;
+    }
 
     console.log(findBiggestNumber("abc$"));
     console.log(findBiggestNumber("a1b4c 6#"));
