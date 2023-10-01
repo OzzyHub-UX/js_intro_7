@@ -48,6 +48,7 @@ console.log(fizzBuzz2(10));
 console.log(fizzBuzz2(15));
 console.log(fizzBuzz2(2));
 
+
 // Task03
 console.log("\n---------TASK03---------\n");
 
@@ -72,6 +73,27 @@ const findSumNumbers = (str) => {
     console.log(findSumNumbers("ab110c045d"));
     console.log(findSumNumbers("525"));
     console.log(findSumNumbers("3 for 10 dollars"));
+
+
+    // Task04
+    console.log("\n---------TASK04---------\n");
+
+    const findBiggestNumber = (str) => {
+        const newArr = [];
+
+        for(const char of str) {
+            if('0123456789'.includes(str)) newArr.push(Number(char));
+            else newArr.push(' ');
+        };
+        return newArr;
+    }
+
+    console.log(findBiggestNumber("abc$"));
+    console.log(findBiggestNumber("a1b4c 6#"));
+    console.log(findBiggestNumber("ab110c045d"));
+    console.log(findBiggestNumber("525"));
+    console.log(findBiggestNumber("3 for 10 dollars"));
+
 
 
     // Task09
