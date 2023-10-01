@@ -153,4 +153,56 @@ console.log(averageOfEdges(10, 13, 20));
 
 console.log("\n----------------------------------\n");
 
+/*
+Swap First and Last Characters
+Write a function named replaceFirstLast() which takes a string argument and returns a new
+string with the first and last characters replaced.
+NOTE: If the length is less than 2, return an empty string.
+NOTE: Ignore extra spaces before and after the string.
+Examples:
+replaceFirstLast("") -> ""
+replaceFirstLast("Hello") -> "oellH"
+replaceFirstLast("Tech Global") -> "lech GlobaT"
+replaceFirstLast("A") -> ""
+replaceFirstLast(" A ") -> ""
+*/
+
+const replaceFirstLast = (str) => {
+    if(str.trim().length < 2) return "";
+    else return str[str.length - 1] + str.slice(1, str.length - 1) + str[0];
+};
+
+console.log(replaceFirstLast(""));
+console.log(replaceFirstLast("Hello"));
+console.log(replaceFirstLast("Tech Global"));
+console.log(replaceFirstLast("A"));
+console.log(replaceFirstLast(" A "));
+
+
+console.log("\n----------------------------------\n");
+
+/*
+Swap First and Last Four Characters
+Write a function named as swap4() which takes a string word as an argument and returns the
+string back with its first and last 4 characters swapped when invoked.
+NOTE: Return empty string if the given string does not have 8 or more characters.
+Examples:
+swap4("abc") -> ""
+swap4("JavaScript") -> "riptScJava"
+swap4("TechGlobal") -> "obalGlTech"
+swap4("") -> ""
+swap4(" ") -> ""
+swap4("Apple") -> ""
+*/
+
+const swap4 = (str) => {
+    return str.slice(4, str.length - 1) + str.slice(0,5);
+}
+
+console.log(swap4("abc"));
+console.log(swap4("Javascript"));
+console.log(swap4("TechGlobal"));
+console.log(swap4(""));
+console.log(swap4(" "));
+console.log(swap4("Apple"));
 
