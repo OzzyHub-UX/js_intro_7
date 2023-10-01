@@ -86,7 +86,7 @@ const findSumNumbers = (str) => {
             else newArr.push(' ');
         };
         return newArr;
-    }
+    };
 
     console.log(findBiggestNumber("abc$"));
     console.log(findBiggestNumber("a1b4c 6#"));
