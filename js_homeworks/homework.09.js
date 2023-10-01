@@ -105,6 +105,10 @@ const findSumNumbers = (str) => {
     console.log(findBiggestNumber("3 for 10 dollars"));
 
 
+    // Task05
+    console.log("\n---------TASK05---------\n");
+
+
 
     // Task09
     console.log("\n---------TASK09---------\n");
