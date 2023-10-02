@@ -56,65 +56,90 @@ const findSumNumbers = (str) => {
     const newArrWSpace = [];
 
     for (const char of str) {
-        if('0123456789'.includes(char)) newArrWSpace.push(Number(char))
+        if ('0123456789'.includes(char)) newArrWSpace.push(Number(char))
         else newArrWSpace.push(' ')
     };
 
     const newArrWithoutSpace = newArrWSpace.join('').split(' ');
     let sum = 0;
-    for(const element of newArrWithoutSpace) {
+    for (const element of newArrWithoutSpace) {
         sum += Number(element);
     }
-    return sum; 
+    return sum;
 };
 
-    console.log(findSumNumbers("abc$"));
-    console.log(findSumNumbers("a1b4c 6#"));
-    console.log(findSumNumbers("ab110c045d"));
-    console.log(findSumNumbers("525"));
-    console.log(findSumNumbers("3 for 10 dollars"));
+console.log(findSumNumbers("abc$"));
+console.log(findSumNumbers("a1b4c 6#"));
+console.log(findSumNumbers("ab110c045d"));
+console.log(findSumNumbers("525"));
+console.log(findSumNumbers("3 for 10 dollars"));
 
 
-    // Task04
-    console.log("\n---------TASK04---------\n");
+// Task04
+console.log("\n---------TASK04---------\n");
 
-    const findBiggestNumber = (str) => {
+const findBiggestNumber = (str) => {
 
-        
-        const newArr = [];
 
-        for(const char of str) {
-            if('0123456789'.includes(char)) newArr.push(Number(char));
-            else newArr.push(' ');
-        };
+    const newArr = [];
 
-        const newArr1 = newArr.join('').split(' ');
-        const newArr2 = newArr1.filter((element) => element.length > 0);
-       
-        let max = 0;
-        for(const element of newArr2) {
-            if(Number(element) > max) max = element;
-        }
-        return max;
+    for (const char of str) {
+        if ('0123456789'.includes(char)) newArr.push(Number(char));
+        else newArr.push(' ');
+    };
+
+    const newArr1 = newArr.join('').split(' ');
+    const newArr2 = newArr1.filter((element) => element.length > 0);
+
+    let max = 0;
+    for (const element of newArr2) {
+        if (Number(element) > max) max = element;
     }
+    return max;
+}
 
-    console.log(findBiggestNumber("abc$"));
-    console.log(findBiggestNumber("a1b4c 6#"));
-    console.log(findBiggestNumber("ab110c045d"));
-    console.log(findBiggestNumber("525"));
-    console.log(findBiggestNumber("3 for 10 dollars"));
-
-
-    // Task05
-    console.log("\n---------TASK05---------\n");
+console.log(findBiggestNumber("abc$"));
+console.log(findBiggestNumber("a1b4c 6#"));
+console.log(findBiggestNumber("ab110c045d"));
+console.log(findBiggestNumber("525"));
+console.log(findBiggestNumber("3 for 10 dollars"));
 
 
+// // Task05
+// console.log("\n---------TASK05---------\n");
 
-    // Task09
-    console.log("\n---------TASK09---------\n");
+// const countOccurrencesOfCharacters = (str) => {
+//     if(str === "");
 
-    const isPowerOf3 = (number) => (Math.pow(number, 3) % 3 === 0);
+//     for(const )
+// }
 
-    console.log(isPowerOf3(15));
 
-    console.log();
+// Task08
+console.log("\n---------TASK08---------\n");
+
+const findUniques = (arr1, arr2) => {
+    const a = arr1.filter((value, index) => arr1.indexOf(value) === index)
+    const b = arr2.filter((value, index) => arr2.indexOf(value) === index)
+    const unic = a.concat(b);
+    const u = []
+    for(const el of unic){
+        if(!a.includes(el) || !b.includes(el)) u.push(el)
+    }
+    return console.log(u)
+
+}
+findUniques([], []);
+findUniques([], [1, 2, 3, 2]);
+findUniques([1, 2, 3, 4], [3, 4, 5, 5]);
+findUniques([8, 9], [9, 8, 9]);
+findUniques([-1, -2], [1, 2]);
+
+// Task09
+console.log("\n---------TASK09---------\n");
+
+const isPowerOf3 = (number) => (Math.pow(number, 3) % 3 === 0);
+
+console.log(isPowerOf3(15));
+
+console.log();
