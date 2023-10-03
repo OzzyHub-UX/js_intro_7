@@ -104,14 +104,9 @@ console.log(findBiggestNumber("525"));
 console.log(findBiggestNumber("3 for 10 dollars"));
 
 
-// // Task05
-// console.log("\n---------TASK05---------\n");
+// Task05
+console.log("\n---------TASK05---------\n");
 
-// const countOccurrencesOfCharacters = (str) => {
-//     if(str === "");
-
-//     for(const )
-// }
 
 
 // Task08
