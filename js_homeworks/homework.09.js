@@ -80,7 +80,6 @@ console.log("\n---------TASK04---------\n");
 
 const findBiggestNumber = (str) => {
 
-
     const newArr = [];
 
     for (const char of str) {
