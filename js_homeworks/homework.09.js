@@ -120,8 +120,8 @@ const countOccurrencesOfCharacters = (str) => {
             count++;
         }
         else {
-            let value = `${count}${tempArr[i]}`;
-            letters = [...letters,value];
+            let singles = `${count}${tempArr[i]}`;
+            letters  = [...letters,singles];
             count = 1;
         }
     }
