@@ -107,6 +107,33 @@ console.log(findBiggestNumber("3 for 10 dollars"));
 // Task05
 console.log("\n---------TASK05---------\n");
 
+const countOccurrencesOfCharacters = (str) => {
+
+    if(str === "") return "";
+
+    const tempArr = str.split('');
+    let letters = [];
+    let count = 1;
+
+    for(let i = 0; i <= tempArr.length - 1; i ++){
+        if(tempArr[i] === tempArr[i + 1]) {
+            count++;
+        }
+        else {
+            let value = `${count}${tempArr[i]}`;
+            letters = [...letters,value];
+            count = 1;
+        }
+    }
+
+    return letters.join('');
+}
+
+console.log(countOccurrencesOfCharacters(""));
+console.log(countOccurrencesOfCharacters("abc"));
+console.log(countOccurrencesOfCharacters("abbcca"));
+console.log(countOccurrencesOfCharacters("aaAAa"));
+console.log(countOccurrencesOfCharacters("www"));
 
 
 // Task08
