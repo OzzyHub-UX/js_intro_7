@@ -121,7 +121,7 @@ const countOccurrencesOfCharacters = (str) => {
         }
         else {
             let singles = `${count}${tempArr[i]}`;
-            letters  = [...letters,singles];
+            letters.push(singles);
             count = 1;
         }
     }
