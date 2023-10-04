@@ -203,6 +203,7 @@ const findUniques = (arr1, arr2) => {
     }
     return console.log(u)
 
+    
 }
 findUniques([], []);
 findUniques([], [1, 2, 3, 2]);
