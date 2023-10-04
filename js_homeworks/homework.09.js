@@ -136,6 +136,60 @@ console.log(countOccurrencesOfCharacters("aaAAa"));
 console.log(countOccurrencesOfCharacters("www"));
 
 
+// Task06
+console.log("\n---------TASK06---------\n");
+
+const fibonacciSeries1 = (n) => {
+
+    let fibonacciArr = [];
+    let num1 = 0;
+    let num2 = 1;
+    let sum;
+
+    for(let i = 0; i < n; i++) {
+        sum = num1 + num2;
+        num1 = num2
+        fibonacciArr = [...fibonacciArr,num2];
+        num2 = sum
+    }
+    return fibonacciArr;
+}
+
+console.log(fibonacciSeries1(3));
+console.log(fibonacciSeries1(5));
+console.log(fibonacciSeries1(7));
+console.log(fibonacciSeries1(8));
+console.log(fibonacciSeries1(1));
+console.log(fibonacciSeries1(2));
+
+
+// Task07
+console.log("\n---------TASK07---------\n");
+
+const fibonacciSeries2 = (n) => {
+
+        let num1 = 0;
+        let num2 = 1;
+        let result = 0;
+        
+        for (let i = 2; i <= n; i++) {
+          result = num1 + num2;
+          num1 = num2;
+          num2 = result;
+        }
+        
+        return result;
+      };
+
+      console.log(fibonacciSeries2(2));
+      console.log(fibonacciSeries2(4));
+      console.log(fibonacciSeries2(8));
+      console.log(fibonacciSeries2(9));
+      console.log(fibonacciSeries2(1));
+    
+// Couldnt Figure this one out on time, waiting for your solution :)
+
+
 // Task08
 console.log("\n---------TASK08---------\n");
 
@@ -156,6 +210,7 @@ findUniques([1, 2, 3, 4], [3, 4, 5, 5]);
 findUniques([8, 9], [9, 8, 9]);
 findUniques([-1, -2], [1, 2]);
 
+
 // Task09
 console.log("\n---------TASK09---------\n");
 
@@ -164,3 +219,5 @@ const isPowerOf3 = (number) => (Math.pow(number, 3) % 3 === 0);
 console.log(isPowerOf3(15));
 
 console.log();
+
+// Couldnt Figure this one out on time, waiting for your solution :)
