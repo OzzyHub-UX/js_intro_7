@@ -190,26 +190,7 @@ const fibonacciSeries2 = (n) => {
 // Couldnt Figure this one out on time, waiting for your solution :)
 
 
-// Task08
-console.log("\n---------TASK08---------\n");
 
-const findUniques = (arr1, arr2) => {
-    const a = arr1.filter((value, index) => arr1.indexOf(value) === index)
-    const b = arr2.filter((value, index) => arr2.indexOf(value) === index)
-    const unic = a.concat(b);
-    const u = []
-    for(const el of unic){
-        if(!a.includes(el) || !b.includes(el)) u.push(el)
-    }
-    return console.log(u)
-
-    
-}
-findUniques([], []);
-findUniques([], [1, 2, 3, 2]);
-findUniques([1, 2, 3, 4], [3, 4, 5, 5]);
-findUniques([8, 9], [9, 8, 9]);
-findUniques([-1, -2], [1, 2]);
 
 
 // Task09
