@@ -126,6 +126,7 @@ const countOccurrencesOfCharacters = (str) => {
         }
     }
 
+    
     return letters.join('');
 }
 
