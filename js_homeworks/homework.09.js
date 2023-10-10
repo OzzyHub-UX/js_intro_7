@@ -130,6 +130,7 @@ const countOccurrencesOfCharacters = (str) => {
 }
 
 
+
 console.log(countOccurrencesOfCharacters(""));
 console.log(countOccurrencesOfCharacters("abc"));
 console.log(countOccurrencesOfCharacters("abbcca"));
