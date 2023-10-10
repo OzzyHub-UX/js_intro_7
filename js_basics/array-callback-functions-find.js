@@ -18,15 +18,26 @@ console.log(numbers.find(x => x % 2 !== 0)); // 10
 // The index of first number more than 100  -> -1
 
 
+
+
 const things = ['Knife', 'Spoon', 'Fork', 'Pen', 'Mug'];
 
-const length3 = things.find(x => x.length === 3);
-const index3 = things.findIndex(x => x.length === 3);
-
-const result = {
-    value: things.find(x => x.length === 3),
-    index: things.findIndex(x => x.length === 3)
-};
+const result = things.map((v, i) => {
+    return {
+        value: v,
+        index: i
+    }
+}).find(obj => obj.value.length === 3);
 
 console.log(result);
+
+// const length3 = things.find(x => x.length === 3);
+// const index3 = things.findIndex(x => x.length === 3);
+
+// const result = {
+//     value: things.find(x => x.length === 3),
+//     index: things.findIndex(x => x.length === 3)
+// };
+
+// console.log(result);
 
