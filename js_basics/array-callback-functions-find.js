@@ -18,16 +18,15 @@ console.log(numbers.find(x => x % 2 !== 0)); // 10
 // The index of first number more than 100  -> -1
 
 
-const noXInVariables = arr => {
-    return arr.map(word => {
-      if (typeof word === 'string') {
-        return word.split('').filter(letter => letter.toUpperCase() !== 'X').join('');
-      }
-      return word;
-    }).filter(word => word.length > 0);
-  };
-  
-  console.log(noXInVariables(['abc', 123, '#$%']));
-  console.log(noXInVariables(['xyz', 123, '#$%']));
-  console.log(noXInVariables(['x', 123, '#$%']));
-  console.log(noXInVariables(['xyXyxy', 'Xx', 'ABC']));
+const things = ['Knife', 'Spoon', 'Fork', 'Pen', 'Mug'];
+
+const length3 = things.find(x => x.length === 3);
+const index3 = things.findIndex(x => x.length === 3);
+
+const result = {
+    value: things.find(x => x.length === 3),
+    index: things.findIndex(x => x.length === 3)
+};
+
+console.log(result);
+
