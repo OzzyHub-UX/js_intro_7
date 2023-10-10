@@ -22,6 +22,18 @@ console.log(numbers.find(x => x % 2 !== 0)); // 10
 
 const things = ['Knife', 'Spoon', 'Fork', 'Pen', 'Mug'];
 
+for(let i = 0; i < things.length; i++) {
+    if(things[i].length === 3) {
+        const result = {
+            value: things[i],
+            index: i
+        }
+        console.log(result);
+        break;
+    }
+};
+
+
 const result = things.map((v, i) => {
     return {
         value: v,
