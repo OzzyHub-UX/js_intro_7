@@ -8,13 +8,16 @@ const person = {
     }
 };
 
+per
 // BEFORE ES6
 function person (name) {
     this.name = name;
-    function eat () {
+    this.eat = function () {
         console.log('Eat');
     }
-    function sleep (){
+    this.sleep = function () {
         console.log('Sleep');
     }
 };
+
+const person1 = new person('Ale')
