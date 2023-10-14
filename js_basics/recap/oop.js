@@ -20,4 +20,5 @@ function person (name) {
     }
 };
 
+
 const person1 = new person('Ale')
