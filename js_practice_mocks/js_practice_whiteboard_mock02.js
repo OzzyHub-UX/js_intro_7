@@ -484,6 +484,29 @@ console.log(removeExtraSpaces("Hello"));
 console.log(removeExtraSpaces("              Hello   World"));
 console.log(removeExtraSpaces("JavaScript is        fun"));
 
-/*
 
+console.log("\n----------------------------------\n");
+
+/*
+Middle Number
+Write a function named middleInt() which takes three number arguments and return the middle
+number.
+Examples:
+middleInt(1, 2, 2) -> 2
+middleInt(5, 5, 8) -> 5
+middleInt(5, 3, 5) -> 5
+middleInt(1, 1, 1) -> 1
+middleInt(-1, 25, 10) -> 10
 */
+
+const middleInt = (num1, num2, num3) => {
+
+    const arr = [num1, num2, num3];
+    arr.sort((a, b) => a - b);
+
+    return arr[1];
+};
+
+console.log(middleInt(1, 2, 2));
+console.log(middleInt(5, 5, 8));
+console.log(middleInt(5, 3, 5));
