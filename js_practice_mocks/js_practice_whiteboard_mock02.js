@@ -283,4 +283,37 @@ console.log(getEvens(2, 7));
 console.log(getEvens(17, 5));
 console.log(getEvens(4, 4));
 
+/*
+Write a function named as getMultipleOf5() which takes 2 number arguments and returns all the
+numbers divisible by 5 as an array stored from first found match to last found match when
+invoked.
+NOTE: Make your code dynamic that works for any numbers and return empty array if there are
+no numbers divisible by 5 in the range of given 2 numbers.
+Assume you will not be given negative numbers.
+Examples:
+getMultipleOf5(3, 17) -> [ 5, 10, 15]
+getMultipleOf5(23, 5) -> [ 20, 15, 10, 5 ]
+getMultipleOf5(5, 5) -> [ 5 ]
+getMultipleOf5(2, 4) -> [ ]
+*/
+
+const getMultipleOf5 = (num1, num2) => {
+
+    let maxNum = Math.max(num1, num2)
+    let minNum = Math.min(num1, num2)
+    let newArr = [];
+
+    for(let i = minNum; i <= maxNum; i++) {
+        if(i % 5 === 0) newArr.push(i)
+    };
+
+    return newArr;
+}
+
+console.log(getMultipleOf5(3, 17));
+console.log(getMultipleOf5(23, 5));
+console.log(getMultipleOf5(5, 5));
+
+console.log(getEvens(4, 4));
+
 console.log(countNeg([-45, 0, 0, 34, 5, -2])); // 1
