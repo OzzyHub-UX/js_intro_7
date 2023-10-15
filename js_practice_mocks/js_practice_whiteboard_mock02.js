@@ -14,7 +14,7 @@ doubleOrTripleWord("22") -> "222222"
 */
 
 const doubleOrTripleWord = (str) => {
-    if(str.length % 2 === 0) return str + str + str
+    if (str.length % 2 === 0) return str + str + str
     else return str + str
 }
 
@@ -38,10 +38,10 @@ firstLastWord(" ") -> ""
 
 const firstLastWord = (str) => {
 
-   let newStr = str.trim().split(" ");
-   
-   if(newStr === "") return newStr
-   else return newStr[0] + newStr[newStr.length - 1];
+    let newStr = str.trim().split(" ");
+
+    if (newStr === "") return newStr
+    else return newStr[0] + newStr[newStr.length - 1];
 
 }
 
@@ -69,9 +69,9 @@ hasVowel("ABC") -> true
 */
 
 const hasVowel = (str) => {
-    
-    for(const letter of str) {
-        if('aeiou'.includes(letter.toLowerCase())) return true
+
+    for (const letter of str) {
+        if ('aeiou'.includes(letter.toLowerCase())) return true
     }
 
     return false
@@ -99,14 +99,14 @@ startVowel("orange") -> true
 startVowel("") -> false
 startVowel(" ") -> false
 startVowel("123") -> false
-*/ 
+*/
 
 const startVowel = (str) => {
-    let firstLetter = str.slice(0,1).toLowerCase();
+    let firstLetter = str.slice(0, 1).toLowerCase();
 
-    if(firstLetter === 'a' || firstLetter === 'e' 
-    || firstLetter === 'i' || firstLetter === 'o' 
-    || firstLetter === 'u') return true;
+    if (firstLetter === 'a' || firstLetter === 'e'
+        || firstLetter === 'i' || firstLetter === 'o'
+        || firstLetter === 'u') return true;
 
     return false;
 }
@@ -162,7 +162,12 @@ replaceFirstLast("A") -> ""
 replaceFirstLast(" A ") -> ""
 */
 
-const 
+const replaceFirstLast = (str) => {
+
+    if (str.length < 2) return "";
+
+    return str[str.length - 1] + str.slice(1, str.length - 1) + str[0];
+}
 
 
 console.log(replaceFirstLast(""));
@@ -189,7 +194,7 @@ swap4("Apple") -> ""
 */
 
 const swap4 = (str) => {
-    return str.slice(4, str.length - 1) + str.slice(0,5);
+    return str.slice(4, str.length - 1) + str.slice(0, 5);
 }
 
 console.log(swap4("abc"));
@@ -201,3 +206,16 @@ console.log(swap4("Apple"));
 
 
 
+
+
+const countNeg = (arr) => {
+
+    let count = 0;
+
+    const arrWNegatives = arr.filter(x => x < 0);
+
+    return arrWNegatives.length;
+
+}
+
+console.log(countNeg([-45, 0, 0, 34, 5, 67])); // 1
