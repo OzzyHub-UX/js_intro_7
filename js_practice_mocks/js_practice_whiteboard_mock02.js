@@ -45,6 +45,8 @@ const firstLastWord = (str) => {
 
 }
 
+
+
 console.log(firstLastWord("Hello World")); // HelloWorld
 console.log(firstLastWord("I like JavaScript"));
 console.log(firstLastWord("Hello"));
@@ -194,28 +196,91 @@ swap4("Apple") -> ""
 */
 
 const swap4 = (str) => {
-    return str.slice(4, str.length - 1) + str.slice(0, 5);
+
+    return str.slice(str.length - 4) + str.slice(4, str.length - 4)  + str.slice(0, 4);
 }
 
 console.log(swap4("abc"));
-console.log(swap4("Javascript"));
+console.log(swap4("JavaScript"));
 console.log(swap4("TechGlobal"));
 console.log(swap4(""));
 console.log(swap4(" "));
 console.log(swap4("Apple"));
 
 
+/*
+Write a function named as swapFirstLastWord() which takes a string word as an argument
+and returns the string back with its first and last words swapped when invoked.
+NOTE: Return empty string if the given string does not have 2 or more words.
+Examples:
+swapFirstLastWord("Hello World") -> "World Hello"
+swapFirstLastWord("I like JavaScript") -> "JavaScript like I"
+swapFirstLastWord("foo bar foo bar") -> "bar bar foo foo"
+swapFirstLastWord("") -> ""
+swapFirstLastWord(" ") -> ""
+swapFirstLastWord("Hello") -> ""
+swapFirstLastWord("Hello ") -> ""
+*/
 
+const swapFirstLastWord = (str) => {
 
+    let newStr = str.trim().split(" ")
 
-const countNeg = (arr) => {
+    if(newStr.length < 2) return "";
 
-    let count = 0;
-
-    const arrWNegatives = arr.filter(x => x < 0);
-
-    return arrWNegatives.length;
-
+    return `${newStr[newStr.length - 1]} ${newStr.slice(1, newStr.length - 1)} ${newStr[0]}`;
 }
 
-console.log(countNeg([-45, 0, 0, 34, 5, 67])); // 1
+console.log(swapFirstLastWord("Hello World"));
+console.log(swapFirstLastWord("I like JavaScript"));
+console.log(swapFirstLastWord("foo bar foo bar"));
+
+/*
+Count Positive Numbers
+Write a function named countPos() which takes an array of numbers as an argument and
+returns how many elements are positive when invoked.
+Examples:
+countPos([-45, 0, 0, 34, 5, 67]) -> 3
+countPos([-23, -4, 0, 2, 5, 90, 123]) -> 4
+countPos([0, -1, -2, -3]) -> 0
+*/
+
+const countPos = (arr) => {
+    return arr.filter(x => x > 0).length
+}
+
+console.log(countPos([-45, 0, 0, 34, 5, 67])); 
+
+
+/*
+Write a function named as getEvens() which takes 2 number arguments and returns all the
+even numbers as an array stored from smallest even number to greatest even number when
+invoked.
+NOTE: Make your code dynamic that works for any numbers and return empty array if there are
+no even numbers in the range of given 2 numbers.
+Assume you will not be given negative numbers.
+Examples:
+getEvens(2, 7) -> [ 2, 4, 6 ]
+getEvens(17, 5) -> [ 6, 8, 10, 12, 14, 16 ]
+getEvens(4, 4) -> [ 4 ]
+getEvens(3, 3) -> [ ]
+*/
+
+const getEvens = (num1, num2) => {
+
+    let maxNum = Math.max(num1, num2)
+    let minNum = Math.min(num1, num2)
+    let newArr = [];
+
+    for(let i = minNum; i <= maxNum; i++) {
+        if(i % 2 === 0) newArr.push(i)
+    };
+
+    return newArr;
+}
+
+console.log(getEvens(2, 7));
+console.log(getEvens(17, 5));
+console.log(getEvens(4, 4));
+
+console.log(countNeg([-45, 0, 0, 34, 5, -2])); // 1
