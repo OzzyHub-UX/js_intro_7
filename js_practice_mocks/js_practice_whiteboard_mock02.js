@@ -14,17 +14,11 @@ doubleOrTripleWord("22") -> "222222"
 */
 
 const doubleOrTripleWord = (str) => {
-    if(str.length % 2 === 0) console.log(str + str + str);
-    else console.log(str + str);
+    if(str.length % 2 === 0) return str + str + str
+    else return str + str
 }
 
-doubleOrTripleWord("Tech");
-doubleOrTripleWord("Apple");
-doubleOrTripleWord("");
-doubleOrTripleWord(" ");
-doubleOrTripleWord("1");
-doubleOrTripleWord("22");
-
+console.log(doubleOrTripleWord("1"));
 
 console.log("\n----------------------------------\n");
 
@@ -43,13 +37,15 @@ firstLastWord(" ") -> ""
 */
 
 const firstLastWord = (str) => {
-    let newStr = str.trim().split(" ");
 
-    if(newStr === "") return newStr;
-    else return newStr[0] + newStr[newStr.length - 1];
+   let newStr = str.trim().split(" ");
+   
+   if(newStr === "") return newStr
+   else return newStr[0] + newStr[newStr.length - 1];
+
 }
 
-console.log(firstLastWord("Hello World"));
+console.log(firstLastWord("Hello World")); // HelloWorld
 console.log(firstLastWord("I like JavaScript"));
 console.log(firstLastWord("Hello"));
 console.log(firstLastWord(""));
@@ -73,14 +69,13 @@ hasVowel("ABC") -> true
 */
 
 const hasVowel = (str) => {
-
+    
     for(const letter of str) {
-        if('aeiou'.includes(letter.toLowerCase())) return true;
+        if('aeiou'.includes(letter.toLowerCase())) return true
     }
 
-    return false;
-};
-
+    return false
+}
 
 console.log(hasVowel(""));
 console.log(hasVowel("Javascript"));
@@ -107,14 +102,14 @@ startVowel("123") -> false
 */ 
 
 const startVowel = (str) => {
-    const firstLetter = str.slice(0,1).toLowerCase();
+    let firstLetter = str.slice(0,1).toLowerCase();
 
-    if(firstLetter === 'a' || firstLetter === 'e' || 
-    firstLetter === 'i' || firstLetter === 'o'|| firstLetter === 'u') return true;
+    if(firstLetter === 'a' || firstLetter === 'e' 
+    || firstLetter === 'i' || firstLetter === 'o' 
+    || firstLetter === 'u') return true;
 
     return false;
 }
-
 console.log(startVowel("Hello"));
 console.log(startVowel("Apple"));
 console.log(startVowel("orange"));
@@ -136,12 +131,12 @@ averageOfEdges(-3, 15, -3) -> 6
 averageOfEdges(10, 13, 20) -> 15
 */
 
-function averageOfEdges(num1, num2, num3) {
+const averageOfEdges = (num1, num2, num3) => {
 
-    let max = Math.max(num1, num2, num3);
-    let min = Math.min(num1, num2, num3);
+    let maxNum = Math.max(num1, num2, num3);
+    let minNum = Math.min(num1, num2, num3);
 
-    return (min + max) / 2;
+    return (maxNum + minNum) / 2;
 }
 
 console.log(averageOfEdges(0, 0, 0));
@@ -167,10 +162,8 @@ replaceFirstLast("A") -> ""
 replaceFirstLast(" A ") -> ""
 */
 
-const replaceFirstLast = (str) => {
-    if(str.trim().length < 2) return "";
-    else return str[str.length - 1] + str.slice(1, str.length - 1) + str[0];
-};
+const 
+
 
 console.log(replaceFirstLast(""));
 console.log(replaceFirstLast("Hello"));
@@ -205,4 +198,6 @@ console.log(swap4("TechGlobal"));
 console.log(swap4(""));
 console.log(swap4(" "));
 console.log(swap4("Apple"));
+
+
 
