@@ -510,3 +510,37 @@ const middleInt = (num1, num2, num3) => {
 console.log(middleInt(1, 2, 2));
 console.log(middleInt(5, 5, 8));
 console.log(middleInt(5, 3, 5));
+
+console.log("\n----------------------------------\n");
+
+
+/*
+Write a function named as firstDuplicate() which takes an array argument and returns the first
+duplicated number in the array when invoked.
+NOTE: Make your code dynamic that works for any array and return -1 if there are no duplicates
+in the array. For two elements to be considered as duplicated, value and data types of the
+elements must be same.
+Examples:
+firstDuplicate([ 3, 7, 10, 0, 3, 10 ]) -> 3
+firstDuplicate([ 5, 7, 7, 0, 5, 10 ]) -> 5
+firstDuplicate([ 5, '5', 3, 7, 4 ]) -> -1
+firstDuplicate([ 123, 'abc', '123', 3, 'abc' ]) -> 'abc'
+firstDuplicate([ 1, 2, 3]) -> -1
+firstDuplicate([ 'foo', 'abc', '123', 'bar’ ]) -> -1
+*/
+
+function firstDuplicate(arr) {
+
+    let set = new Set();
+    for (let i = 0; i < arr.length; i++) {
+        if (set.has(arr[i])) {
+            return arr[i];
+        } else {
+            set.add(arr[i]);
+        }
+    }
+    return -1;
+}
+
+console.log(firstDuplicate([7, 10, 3, 10]));
+console.log(firstDuplicate(['foo', 'bar', 'a', 12, '12']));
