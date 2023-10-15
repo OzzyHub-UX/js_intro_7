@@ -308,7 +308,7 @@ const getMultipleOf5 = (num1, num2) => {
     };
 
     return newArr;
-}
+};
 
 console.log(getMultipleOf5(3, 17));
 console.log(getMultipleOf5(23, 5));
