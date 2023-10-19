@@ -20,6 +20,7 @@ const doubleOrTripleWord = (str) => {
 
 console.log(doubleOrTripleWord("1"));
 
+
 console.log("\n----------------------------------\n");
 
 
