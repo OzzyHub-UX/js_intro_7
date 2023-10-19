@@ -13,6 +13,7 @@ doubleOrTripleWord("1") -> "11"
 doubleOrTripleWord("22") -> "222222"
 */
 
+
 const doubleOrTripleWord = (str) => {
     if (str.length % 2 === 0) return str + str + str
     else return str + str
