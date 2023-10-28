@@ -7,6 +7,7 @@ const shoppingItems = {
     pineapple: 5.25,
 };
 
-console.log(shoppingItems);
+console.log(shoppingItems.apple);
+
 
 
