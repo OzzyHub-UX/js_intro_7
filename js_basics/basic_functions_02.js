@@ -29,6 +29,7 @@ function isEven(number1){
 console.log(isEven(3)); // false
 console.log(isEven(4)); // true
 
+
 // Tricky Part
 console.log(isOdd("")); // false 
 console.log(isEven("")); // true
