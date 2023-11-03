@@ -104,6 +104,7 @@ const splitString = (string, number) => {
 }
 
 
+
 console.log(splitString("JavaScript", 5))
 console.log(splitString("Java", 2))
 console.log(splitString("Automation", 3))
