@@ -103,6 +103,7 @@ const splitString = (string, number) => {
     else return string.slice(0, number) + ' ' + string.slice(number)
 }
 
+
 console.log(splitString("JavaScript", 5))
 console.log(splitString("Java", 2))
 console.log(splitString("Automation", 3))
