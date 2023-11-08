@@ -41,6 +41,7 @@ console.log(sum([-1, 1, -2, 2], true))
 console.log(sum([0, -1, 15, 1], false))
 console.log(sum([1, 2, 3, 4, -4], true))
 
+console.log('-----------------------------------------')
 
 // Task03
 
@@ -54,7 +55,90 @@ const nthCHars = (str, num) => {
     }
 
     console.log(nthCHars("Java", 2))
+    console.log(nthCHars("JavaScript", 5))
+    console.log(nthCHars("Java", 3))
+    console.log(nthCHars("Hi", 4))
+    console.log(nthCHars("0123456789", 2))
+
+    // Task04
+
+    const canFormString = (str1, str2) => {
+        let formattedStr1 = "";
+        let formattedStr2 = "";
+    
+        for (let char of str1) {
+            if (char !== " ") {
+                formattedStr1 += char.toLowerCase();
+            }
+        }
+    
+        for (let char of str2) {
+            if (char !== " ") {
+                formattedStr2 += char.toLowerCase();
+            }
+        }
+    
+        if (formattedStr1.length !== formattedStr2.length) {
+            return false;
+        }
+    
+        const sortedStr1 = formattedStr1.split("").sort().join("");
+        const sortedStr2 = formattedStr2.split("").sort().join("");
+        return sortedStr1 === sortedStr2;
+    }
+
+    console.log(canFormString("Hello", 'Hi'));
+
+    console.log('-----------------------------------------')
 
 
+    //Task05
+
+    const isAnagram = (str, str1) => {
+
+    }
+
+    console.log(isAnagram('Apple', 'Peach'))
+    console.log(isAnagram('listen', 'silent'))
+
+
+    // Task06
+
+   const count = (arr, isEven) => {
+
+        let count = 0;
+        for (let num of arr) {
+            if (isEven && num % 2 === 0) {
+                count++;
+            } else if (!isEven && num % 2 !== 0) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    console.log(count([1, 5, 10], true))
+
+    // Task07
+
+    const sumDigitsDouble = (str) => {
+        let sum = 0;
+        let hasDigits = false;
+    
+        for (let i = 0; i < str.length; i++) {
+            if (!isNaN(str[i]) && str[i] !== ' ') {
+                sum += parseInt(str[i]);
+                hasDigits = true;
+            }
+        }
+    
+        if (hasDigits) {
+            return sum * 2;
+        } else {
+            return -1;
+        }
+    }
+
+    console.log(sumDigitsDouble('Javascript'));
 
 
