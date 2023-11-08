@@ -102,6 +102,8 @@ const nthCHars = (str, num) => {
     console.log(isAnagram('listen', 'silent'))
 
 
+    console.log('-----------------------------------------')
+
     // Task06
 
    const count = (arr, isEven) => {
@@ -118,6 +120,8 @@ const nthCHars = (str, num) => {
     }
 
     console.log(count([1, 5, 10], true))
+
+    console.log('-----------------------------------------')
 
     // Task07
 
@@ -142,3 +146,23 @@ const nthCHars = (str, num) => {
     console.log(sumDigitsDouble('Javascript'));
 
 
+    // Task08
+
+    const countOccurrence = (str, subStr) => {
+        let count = 0;
+        for (let i = 0; i <= str.length - subStr.length; i++) {
+            let match = true;
+            for (let j = 0; j < subStr.length; j++) {
+                if (str[i + j] !== subStr[j]) {
+                    match = false;
+                    break;
+                }
+            }
+            if (match) {
+                count++;
+            }
+        }
+        return count;
+    }
+
+    console.log(countOccurrence('Javascript', 'Java'));
