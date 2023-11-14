@@ -55,6 +55,8 @@ const decimal2 = (arr) => {
 
 }
 
+console.log(decimal2());
+
 console.log("\n--------------------\n");
 
 // Task04
