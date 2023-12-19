@@ -135,5 +135,28 @@ isTrueOrFalse("Got stuck in the Traffic") 		-> false
 
 // Task05
 
+const isTrueOrFalse = (str) => {
+
+    let newStr = str.toUpperCase()
+
+    let countPos = 0;
+    let countNeg = 0
+
+    let firstHalf = 'ABCDEFGHIJKLM'
+    let secondHalf = 'NOPQRSTUVWXYZ'
+
+    for(const letter of newStr){
+        if (firstHalf.includes(letter)) countPos += 1
+        if (secondHalf.includes(letter)) countNeg += 1;
+    }
+
+    return countPos > countNeg
+}
 
 
+
+console.log(isTrueOrFalse("A big brown fox caught a bad rabbit")) //	-> true
+console.log(isTrueOrFalse("Xylophones can obtain Xenon."))  	//	->  false
+console.log(isTrueOrFalse("CHOCOLATE MAKES A GREAT SNACK")) 	//-> true
+console.log(isTrueOrFalse("All FOoD tAsTEs NIcE for someONe")) //	-> true
+console.log(isTrueOrFalse("Got stuck in the Traffic")) 		//-> false
